@@ -1,0 +1,1795 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabla de Datos</title>
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+            font-family: Arial, sans-serif;
+            padding: 20px;
+            background-color: #f4f4f4;
+        }
+        h2 {
+            background-color: blue;
+            color: #f2f2f2;
+            padding: 10px;
+            border-radius: 5px;
+            width: 100%;
+            text-align: center;
+            margin: 20px 0; /* Margen arriba y abajo */
+        }
+        input[type="text"] {
+            width: 80%;
+            padding: 10px;
+            margin-bottom: 20px;
+            font-size: 1em;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        .table-container {
+            width: 80%;
+            margin: 20px 0; /* Margen arriba y abajo */
+            display: block; /* Mostrar por defecto */
+        }
+        table {
+            border-collapse: collapse;
+            width: 100%; /* Asegúrate de que ocupe todo el ancho */
+            text-align: center;
+            background-color: #fff;
+            border-radius: 5px;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 10px; /* Ajustar el padding */
+            overflow: hidden; /* Evita el desbordamiento en celdas */
+            text-overflow: ellipsis; /* Muestra puntos suspensivos para texto largo */
+            white-space: nowrap; /* Evita que el texto se envuelva */
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+        /* Ajustar el ancho de la columna ITEM */
+        th:nth-child(1), td:nth-child(1) {
+            width: 50px; /* Ancho de la columna ITEM */
+        }
+        /* Ajustar el ancho de otras columnas */
+        th:nth-child(2), td:nth-child(2) {
+            width: 80px; /* Ancho de la columna ID */
+        }
+        th:nth-child(3), td:nth-child(3),
+        th:nth-child(4), td:nth-child(4),
+        th:nth-child(5), td:nth-child(5),
+        th:nth-child(6), td:nth-child(6) {
+            width: auto; /* Dejar que el ancho se ajuste automáticamente */
+        }
+    </style>
+</head>
+<body>
+
+<h2>Búsqueda de Datos</h2>
+<input type="text" id="searchInput" placeholder="Buscar...">
+
+<div class="table-container" id="tableContainer1">
+    <table id="dataTable" > <h2>BLOQUE 59NAEDE401</h2>
+        <thead>
+            <tr>
+                <th>ITEM</th>
+                <th>ID</th>
+                <th>APELLIDOS Y NOMBRES</th>
+                <th>BLOQUE</th>
+                <th>RUC</th>
+                <th>RAZON SOCIAL</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr><td>1</td><td>1529350</td><td>AGUILAR SANCHEZ, JULIO JOSE</td><td>59NAEDE401</td><td>20548771707</td><td>ALFRED GRAFIC S.A.C.</td></tr>
+            <tr><td>2</td><td>1529344</td><td>CABRERA MENDOZA, NICOLE NATHALI</td><td>59NAEDE401</td><td>10471110499</td><td>HUAPAYA GUIÑO DIEGO HERMIAS</td></tr>
+            <tr><td>3</td><td>1459705</td><td>CRUZ GONZALES, SERGIO ANTHONY</td><td>59NAEDE401</td><td>20536199242</td><td>KUSA COTTON PERU S.A.C.</td></tr>
+            <tr><td>4</td><td>1521244</td><td>EVARISTO QUISPE, RICARDO DANIEL</td><td>59NAEDE401</td><td>20604379521</td><td>R & R HYDRAULIC PARTS S.A.C</td></tr>
+            <tr><td>5</td><td>1526466</td><td>FERNANDEZ GIRALDEZ, ROSALIA JENNIFER</td><td>59NAEDE401</td><td>20511127336</td><td>CREACIONES REYBORG S.C.R.L.</td></tr>
+            <tr><td>6</td><td>1480447</td><td>GONZÁLES OTERO, YBER</td><td>59NAEDE401</td><td>20508698730</td><td>D'ANELLA S.A.C.</td></tr>
+            <tr><td>7</td><td>1531465</td><td>HUAMÁN HUAMÁN, VERONICA DANIELA</td><td>59NAEDE401</td><td>20554466959</td><td>DINAMIKA GROUP S.A.C.</td></tr>
+            <tr><td>8</td><td>1526467</td><td>LLACSA CHUGNAS, QUIRINO</td><td>59NAEDE401</td><td>20475428634</td><td>ESTANTERIAS METALICAS J.R.M. S.A.C</td></tr>
+            <tr><td>9</td><td>1529362</td><td>LLANCARI CARRASCO, JESUS DANIEL</td><td>59NAEDE401</td><td>20604379521</td><td>R & R HYDRAULIC PARTS S.A.C</td></tr>
+            <tr><td>10</td><td>785687</td><td>MENDOZA ESPINOZA, MELIZA JHOVANA</td><td>59NAEDE401</td><td>20600906381</td><td>TEAM TECHNOLOGY S.A.C.</td></tr>
+            <tr><td>11</td><td>1521253</td><td>MONTALVO MARTEL, JHONATAN DANIEL</td><td>59NAEDE401</td><td>20266352337</td><td>SOFTYS PERU S.A.C.</td></tr>
+            <tr><td>12</td><td>1521249</td><td>PALOMINO PIÑARES, NADINE EVELYN</td><td>59NAEDE401</td><td>20610671668</td><td>SOLIPAL ELETTRICA S.A.C.</td></tr>
+            <tr><td>13</td><td>1538817</td><td>PADILLA RODRÍGUEZ, ISABEL VICTORIA</td><td>59NAEDE401</td><td>20610069020</td><td>CORPORACION TECNOLOGICA H & G S.A.C.</td></tr>
+            <tr><td>14</td><td>1434421</td><td>QUISPE SUPO, LUIS FERNANDO</td><td>59NAEDE401</td><td>20603515821</td><td>HOME TECHNOLOGYS S.A.C.</td></tr>
+            <tr><td>15</td><td>1538819</td><td>RAMOS FLORES, LEYDI ROCIO</td><td>59NAEDE401</td><td>20472687531</td><td>R. DOY INDUSTRIAL S.A.C.</td></tr>
+            <tr><td>16</td><td>1529352</td><td>TAFUR MARTINEZ, ELIZABETH DANERI</td><td>59NAEDE401</td><td>20610671668</td><td>SOLIPAL ELETTRICA S.A.C.</td></tr>
+            <tr><td>17</td><td>1529347</td><td>TARACAYA PUMA, JACKSON BRAYAN</td><td>59NAEDE401</td><td>20551681301</td><td>MODA YESNIF E.I.R.L.</td></tr>
+            <tr><td>18</td><td>1518461</td><td>TORNERO MADRID, JHONMY GALENY</td><td>59NAEDE401</td><td>20423925028</td><td>MODAS DIVERSAS DEL PERU SAC</td></tr>
+            <tr><td>19</td><td>1538824</td><td>UGARTE HUACCHILLO, CELESTE DEL CARMEN</td><td>59NAEDE401</td><td>20545122520</td><td>J & P PERIFERICOS S.A.C.</td></tr>
+        </tbody>
+    </table>
+</div>
+
+
+
+<div class="table-container" id="tableContainer2">
+    
+    <table id="dataTable2"><h2>BLOQUE 59NAEDE402</h2>
+        <thead>
+            <tr>
+                <th>ITEM</th>
+                <th>ID</th>
+                <th>APELLIDOS Y NOMBRES</th>
+                <th>BLOQUE</th>
+                <th>RUC</th>
+                <th>RAZON SOCIAL</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr><td>1</td><td>1548250</td><td>GARCÍA TASAYCO, MAYRA MELINA</td><td>59NAEDE402</td><td>20306781252</td><td>PRECOTEX S.A.C.</td></tr>
+            <tr><td>2</td><td>1510233</td><td>BUITRON AVILA, ALLISON LUCIA</td><td>59NAEDE402</td><td>20607954934</td><td>CEVICHERIA RESTAURANTE TACU MAR E.I.R.L.</td></tr>
+            <tr><td>3</td><td>1521252</td><td>GUERRA SULLCA, JOSE LUIS</td><td>59NAEDE402</td><td>20546255299</td><td>PACKPLAST ENVOLTURAS S.A.C.</td></tr>
+            <tr><td>4</td><td>1461508</td><td>GIRON PALOMINO, CESAR LUIS</td><td>59NAEDE402</td><td>20552515332</td><td>CONFECCIONES GAMAS & ALESSANDRO E.I.R.L</td></tr>
+            <tr><td>5</td><td>1538818</td><td>TORRES FLORES, LUCIANA NICOLET</td><td>59NAEDE402</td><td>20610781170</td><td>CREAWORLD PERU S.A.C.</td></tr>
+            <tr><td>6</td><td>977960</td><td>ABAD MORALES, JHORGHIÑO JHAIR</td><td>59NAEDE402</td><td>20546782744</td><td>GAMATRACTOR PERU S.A.C.</td></tr>
+            <tr><td>7</td><td>1529403</td><td>GONZALES FERNANDEZ, ABRAHAN JOSUE</td><td>59NAEDE402</td><td>20545122520</td><td>J & P PERIFERICOS S.A.C.</td></tr>
+            <tr><td>8</td><td>1510267</td><td>RODRIGUEZ PARE, ERICK BRYAN</td><td>59NAEDE402</td><td>10099273459</td><td>GALVEZ MARCHENA GIOVANNA</td></tr>
+            <tr><td>9</td><td>1533142</td><td>NAVARRO MONTOYA, JOEL ALEXIS</td><td>59NAEDE402</td><td>20262996329</td><td>FARMINDUSTRIA S.A.</td></tr>
+            <tr><td>10</td><td>1538816</td><td>ALVAREZ VELASQUEZ, OSCAR GERMAN</td><td>59NAEDE402</td><td>20601014956</td><td>ELIBEM IMPORT E.I.R.L.</td></tr>
+            <tr><td>11</td><td>1477154</td><td>RONDON CARTULIN, ALEJANDRO VLADIMIR</td><td>59NAEDE402</td><td>20605154841</td><td>MARC ENERGY & TELECOM S.A.C.</td></tr>
+            <tr><td>12</td><td>1526007</td><td>TRUJILLO RENGIFO, JOHAN JOSEPH</td><td>59NAEDE402</td><td>20378092419</td><td>FILASUR S.A.</td></tr>
+            <tr><td>13</td><td>1500101</td><td>GABRIEL BENDEZÚ, LUZ MARICIELO</td><td>59NAEDE402</td><td>20611258861</td><td>CEDIFYC E.I.R.L.</td></tr>
+            <tr><td>14</td><td>1531462</td><td>SALAZAR HUARCAYA, JUAN PEDRO</td><td>59NAEDE402</td><td>20500294508</td><td>DECOGAR S.A.C.</td></tr>
+            <tr><td>15</td><td>1332979</td><td>ESPINO ESPÍRITU VICTOR HUGO</td><td>59NAEDE402</td><td>20603132611</td><td>PROMOLIDER ORG S.A.C.</td></tr>
+            <tr><td>16</td><td>1538829</td><td>HUAMANI JOSE, FRANK ISAC</td><td>59NAEDE402</td><td>10756233276</td><td>QUISPE CALLA KARINA FLOR</td></tr>
+        </tbody>
+    </table>
+</div>
+
+
+<div class="table-container" id="tableContainer3">
+    
+    <table id="dataTable3"><h2>BLOQUE 59NAEDE501</h2>
+        <thead>
+            <tr>
+                <th>ITEM</th>
+                <th>ID</th>
+                <th>APELLIDOS Y NOMBRES</th>
+                <th>BLOQUE</th>
+                <th>RUC</th>
+                <th>RAZON SOCIAL</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr><td>1</td><td>1473468</td><td>ALMEYDA LLACTAHUAMAN, DAYANA LEYCI</td><td>59NAEDE501</td><td>20609790386</td><td>ASESORES EN COMERCIO GT S.A.C.</td></tr>
+            <tr><td>2</td><td>1185921</td><td>ARGANDOÑA HUAMANI, ANAIS</td><td>59NAEDE501</td><td>20600605918</td><td>SEPROVA E.I.R.L</td></tr>
+            <tr><td>3</td><td>1486966</td><td>APAZA VILCA, EDGAR WILY</td><td>59NAEDE501</td><td>20537420252</td><td>GRUPO COMPINA S.A.C.</td></tr>
+            <tr><td>4</td><td>1492391</td><td>AYALA SALINAS, SULEYMA PILAR</td><td>59NAEDE501</td><td>20100709458</td><td>LUVEGI INGENIEROS S.A.C.</td></tr>
+            <tr><td>5</td><td>1474617</td><td>AQQUEPUCHO PERALTA, FIORELA ESTEFANI</td><td>59NAEDE501</td><td>10090598711</td><td>ANTEZANA PILLPE ERASMO</td></tr>
+            <tr><td>6</td><td>1425282</td><td>BARRANTES CRUZADO, ALESSANDRA NICOLE</td><td>59NAEDE501</td><td>20610781170</td><td>CREAWORLD PERU S.A.C.</td></tr>
+            <tr><td>7</td><td>1479717</td><td>BEDREGAL SÁNCHEZ, BRISILA</td><td>59NAEDE501</td><td>20545122520</td><td>J & P PERIFERICOS S.A.C.</td></tr>
+            <tr><td>8</td><td>1427760</td><td>CASAS HUARCA, JAVIER ANTHONY</td><td>59NAEDE501</td><td>20610801766</td><td>CORPORACION GARCILASO DE LA VEGA PREMIUM E.I.R.L.</td></tr>
+            <tr><td>9</td><td>1474620</td><td>CASTRO RIOS, DAYAN SABRINA</td><td>59NAEDE501</td><td>20607284092</td><td>AMAZING PROSPERITY GROUP S.A.C.</td></tr>
+            <tr><td>10</td><td>1479716</td><td>HUARCAYA CARDENAS, ERIKA NAHOMI</td><td>59NAEDE501</td><td>20601407508</td><td>CORPORACION SOJAMEL S.A.C.</td></tr>
+            <tr><td>11</td><td>1473466</td><td>MERINO CHIRI, EDGAR SANTIAGO</td><td>59NAEDE501</td><td>20423925028</td><td>MODAS DIVERSAS DEL PERU SAC</td></tr>
+            <tr><td>12</td><td>1473464</td><td>MURRUGARRA CHOQUEHUANCA, STEPHANY ESMERALDA</td><td>59NAEDE501</td><td>20451498461</td><td>CONFECCIONES TRENTO S.A.C.</td></tr>
+            <tr><td>13</td><td>1143071</td><td>QUISPE GOMEZ, BRIGGITTE JAHAYRA</td><td>59NAEDE501</td><td>20606961261</td><td>ASOCIE INSTRUMENTOS E.I.R.L.</td></tr>
+            <tr><td>14</td><td>1474177</td><td>REQUENA HUARANGA, MARTIN ELIAS</td><td>59NAEDE501</td><td>20610035532</td><td>CHASKI DOLAR S.A.C.</td></tr>
+            <tr><td>15</td><td>1346607</td><td>RUBINA SOLIS, JASMIN JESSENIA</td><td>59NAEDE501</td><td>20603687770</td><td>MANUFACTURA INDUSTRIAL Y MINERA S.A.C.</td></tr>
+            <tr><td>16</td><td>1479078</td><td>SANCHEZ SANCHEZ, ROSA AZUCENA</td><td>59NAEDE501</td><td>20609382709</td><td>ICALPLAST S.A.C.</td></tr>
+            <tr><td>17</td><td>1439714</td><td>SANTIAGO SÁNCHEZ, DICSER EDWIN</td><td>59NAEDE501</td><td>20203936029</td><td>MUNICIPALIDAD DISTRITAL PUCARA</td></tr>
+            <tr><td>18</td><td>1474625</td><td>SOLANO NAVARRO, SANDY JHUVALY</td><td>59NAEDE501</td><td>20535865117</td><td>ASE SYSTEM S.A.C.</td></tr>
+            <tr><td>19</td><td>1475338</td><td>SOTO VALENTIN, ERICK FREDDY</td><td>59NAEDE501</td><td>20610336273</td><td>VLE GROUP S.A.C.S.</td></tr>
+        </tbody>
+    </table>
+</div>
+
+
+
+<div class="table-container" id="tableContainer4">
+    
+    <table id="dataTable4"><h2>BLOQUE 59NAEDE601</h2>
+        <thead>
+            <tr>
+                <th>ITEM</th>
+                <th>ID</th>
+                <th>APELLIDOS Y NOMBRES</th>
+                <th>BLOQUE</th>
+                <th>RUC</th>
+                <th>RAZON SOCIAL</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr><td>1</td><td>1443142</td><td>POICON MAZA, XIOMARA YAMILETH</td><td>59NAEDE601</td><td>10452231412</td><td>CHOQUEHUANCA JIBAJA FREDESMINDA</td></tr>
+            <tr><td>2</td><td>1426566</td><td>GUIZADO DURAN, MELANY CORAYMA</td><td>59NAEDE601</td><td>20101362702</td><td>CONFECCIONES TEXTIMAX S.A.</td></tr>
+            <tr><td>3</td><td>1452473</td><td>MALPARTIDA GERONIMO, SARA</td><td>59NAEDE601</td><td>20607072605</td><td>BIOSEGURIDAD SUDAMERICA S.A.C.</td></tr>
+            <tr><td>4</td><td>1421232</td><td>SARABIA MALPARTIDA, GREEZY SANDY</td><td>59NAEDE601</td><td>20503409021</td><td>CARVALIE E.I.R.L.</td></tr>
+            <tr><td>5</td><td>1239972</td><td>VELI ALFARO, ROBERT LUIS</td><td>59NAEDE601</td><td>10740658536</td><td>SALCEDO CASTRO RICARDO DANIEL</td></tr>
+            <tr><td>6</td><td>1435449</td><td>AGAPITO CELESTINO, RENZO RODRIGO</td><td>59NAEDE601</td><td>20427919111</td><td>DINET S.A.</td></tr>
+            <tr><td>7</td><td>1431625</td><td>PRADO ANCCASI, LAURA</td><td>59NAEDE601</td><td>20604379521</td><td>R & R HYDRAULIC PARTS S.A.C.</td></tr>
+            <tr><td>8</td><td>1442768</td><td>JANAMPA MAGRO, CARLOS MANUEL</td><td>59NAEDE601</td><td>20603515821</td><td>HOME TECHNOLOGYS S.A.C.</td></tr>
+            <tr><td>9</td><td>1449649</td><td>COLONIA HUAMÁN, ESTEFANÍA ELVIRA</td><td>59NAEDE601</td><td>20604874841</td><td>GRUPO GM SYSTEM S.A.C.</td></tr>
+            <tr><td>10</td><td>1434698</td><td>TORIBIO MIRANDA, MICHELL JEFFERSON</td><td>59NAEDE601</td><td>20100127165</td><td>PROCTER & GAMBLE PERU S.R.L.</td></tr>
+            <tr><td>11</td><td>1435808</td><td>CHILET PATIÑO, XIOMARA NAOMI</td><td>59NAEDE601</td><td>20600372158</td><td>CHEF PIMIENTA ROSA S.A.C.</td></tr>
+            <tr><td>12</td><td>1433949</td><td>FLORES FLORES, CAMILA ESTEFANI</td><td>59NAEDE601</td><td>10410309331</td><td>MIRANDA CUEVA OSCAR</td></tr>
+            <tr><td>13</td><td>1435311</td><td>RIVERA CAIPO, DIEGO</td><td>59NAEDE601</td><td>20606665360</td><td>RCJ INDUSTRIAL INKPACK S.A.C.</td></tr>
+            <tr><td>14</td><td>1438192</td><td>SAAVEDRA HUARI, MAYRA MARION</td><td>59NAEDE601</td><td>20603082835</td><td>M&R ROMERO S.A.C.</td></tr>
+            <tr><td>15</td><td>1433805</td><td>PONCE LEANDRO, JHEIDY CINTHIA</td><td>59NAEDE601</td><td>20566450128</td><td>OCEAN PROJECTS LOGISTICS SAC</td></tr>
+            <tr><td>16</td><td>1448160</td><td>FLORES COTRINA, ELIAS JOSE</td><td>59NAEDE601</td><td>20423925028</td><td>MODAS DIVERSAS DEL PERU SAC</td></tr>
+            <tr><td>17</td><td>1449921</td><td>TRINIDAD VILCARANO, RUTH MAYRA</td><td>59NAEDE601</td><td>20544985788</td><td>INVERSIONES ARTIKA SOCIEDAD ANONIMA CERRADA</td></tr>
+        </tbody>
+    </table>
+</div>
+
+
+<div class="table-container" id="tableContainer5">
+    
+    <table id="dataTable5"><h2>BLOQUE 59NAEDE602</h2>
+        <thead>
+            <tr>
+                <th>ITEM</th>
+                <th>ID</th>
+                <th>APELLIDOS Y NOMBRES</th>
+                <th>BLOQUE</th>
+                <th>RUC</th>
+                <th>RAZON SOCIAL</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr><td>1</td><td>1263574</td><td>GIL CCALLUCO, ANDREA MARYCIELO</td><td>59NAEDE602</td><td>20100093830</td><td>PANADERIA SAN JORGE S.A.</td></tr>
+            <tr><td>2</td><td>1439333</td><td>CÁCERES ROSSELL, AYELEN YARED</td><td>59NAEDE602</td><td>20508937661</td><td>ESCUELA DE CAPACITACION INTEGRAL PARA PROFESIONALES</td></tr>
+            <tr><td>3</td><td>1403450</td><td>AGUILAR LOPEZ, RONNY ENRIQUE</td><td>59NAEDE602</td><td>20609929660</td><td>BLOOD MONEY MUSIC S.A.C.</td></tr>
+            <tr><td>4</td><td>1459879</td><td>FLORES GONZALES, VERONICA MARIA</td><td>59NAEDE602</td><td>20606382074</td><td>ANGELITH IMPORT EXPORT E.I.R.L.</td></tr>
+            <tr><td>5</td><td>1343267</td><td>OLIVARES PEREZ, JOSSELYN MARILYN</td><td>59NAEDE602</td><td>20514784796</td><td>COMPAÑIA INDUSTRIAL MONTESOL SOCIEDAD COMERCIAL DE RESPONSABILIDAD LIMITADA - COMPAÑIA INDUSTRIAL MO</td></tr>
+            <tr><td>6</td><td>1432089</td><td>HUAMAN PEREZ, XIOMARA LINDA</td><td>59NAEDE602</td><td>20611817518</td><td>CORPORACION DAIFER S.A.C.</td></tr>
+            <tr><td>7</td><td>1442878</td><td>PALOMINO CARDENAS, AARON FERNANDO</td><td>59NAEDE602</td><td>20100279348</td><td>FABRICA DE ENVASES DE LATA LUX S.A.</td></tr>
+            <tr><td>8</td><td>1442880</td><td>PALOMINO CÁRDENAS, ALBERT FERNANDO</td><td>59NAEDE602</td><td>20100279348</td><td>FABRICA DE ENVASES DE LATA LUX S.A.</td></tr>
+            <tr><td>9</td><td>1401101</td><td>APOLINARIO AVELLANEDA, XIOMARA PATRICIA</td><td>59NAEDE602</td><td>10420202925</td><td>CAMONES LAZARO BRAND DINA</td></tr>
+            <tr><td>10</td><td>1432554</td><td>TRIPUL MAMANI, JANFRANCO WILMAR</td><td>59NAEDE602</td><td>20604842990</td><td>INECOWARE S.A.C.</td></tr>
+            <tr><td>11</td><td>1433395</td><td>LIMAS ROJAS, NANCY VIOLETA</td><td>59NAEDE602</td><td>20508407867</td><td>PANIFICADORA ANDINA S.A.C.</td></tr>
+            <tr><td>12</td><td>1280514</td><td>MENDOZA GONZALES, SANDRA GLADYS</td><td>59NAEDE602</td><td>20608147552</td><td>INVERSIONES IBARRA & HNOS S.A.C.</td></tr>
+        </tbody>
+    </table>
+</div>
+
+
+<div class="table-container" id="tableContainer6">
+    
+    <table id="dataTable6"><h2>BLOQUE 59NAEDE603</h2>
+        <thead>
+            <tr>
+                <th>ITEM</th>
+                <th>ID</th>
+                <th>APELLIDOS Y NOMBRES</th>
+                <th>BLOQUE</th>
+                <th>RUC</th>
+                <th>RAZON SOCIAL</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr><td>1</td><td>998761</td><td>MUÑOZ SANCHEZ, STEFANY</td><td>59NAEDE603</td><td>20604987122</td><td>IPS AUTOPARTES SOCIEDAD ANONIMA CERRADA - IPS AUTOPARTES S.A.C.</td></tr>
+            <tr><td>2</td><td>1449701</td><td>SUAREZ ROMERO, LIANA SHEYLA</td><td>59NAEDE603</td><td>20607072605</td><td>BIOSEGURIDAD SUDAMERICA S.A.C.</td></tr>
+            <tr><td>3</td><td>1417651</td><td>MELENDEZ MEDINA, DANIELA</td><td>59NAEDE603</td><td>20608590405</td><td>GRUPO VICTORIA PERU S.A.C.</td></tr>
+            <tr><td>4</td><td>1435355</td><td>MEZA GAGO, SEBASTIAN TERRY</td><td>59NAEDE603</td><td>20608938193</td><td>TEXTIL TELAR S.A.C.</td></tr>
+            <tr><td>5</td><td>1428061</td><td>OCMIN PABLO, MAYRA GIANELLA</td><td>59NAEDE603</td><td>20608938193</td><td>TEXTIL TELAR S.A.C.</td></tr>
+            <tr><td>6</td><td>1427477</td><td>RAMIREZ DIAZ, JANETH VIOLETA</td><td>59NAEDE603</td><td>20100367395</td><td>PLASTICOS NACIONALES S.A.</td></tr>
+            <tr><td>7</td><td>1426537</td><td>REYES GOMEZ, DEIVIT JULIAN</td><td>59NAEDE603</td><td>20609712733</td><td>S & M CLINICA OCUPACIONAL E INGENIERIA S.A.C.</td></tr>
+            <tr><td>8</td><td>1435846</td><td>FERNANDEZ YUYARIMA, HANS KEN</td><td>59NAEDE603</td><td>20607072605</td><td>BIOSEGURIDAD SUDAMERICA S.A.C.</td></tr>
+            <tr><td>9</td><td>1433943</td><td>VELASQUEZ MERGE, JEREMY ERNESTO</td><td>59NAEDE603</td><td>20554501371</td><td>DISPERSA INTERNACIONAL S.R.L.</td></tr>
+            <tr><td>10</td><td>1436166</td><td>PEREZ FREYRE, FARIHT WALTER</td><td>59NAEDE603</td><td>20504407536</td><td>SEMPAR S.A.</td></tr>
+            <tr><td>11</td><td>1443563</td><td>MAUTINO CARRION, HELI JESUS</td><td>59NAEDE603</td><td>20504009212</td><td>FABRICACION Y COMERCIALIZACION INDUSTRIAL S.A.C.</td></tr>
+            <tr><td>12</td><td>1425300</td><td>CACERES MORENO, MAIRA ALEJANDRA</td><td>59NAEDE603</td><td>20607072605</td><td>BIOSEGURIDAD SUDAMERICA S.A.C.</td></tr>
+            <tr><td>13</td><td>1226663</td><td>MALLQUI HUERTO, RIVALDO</td><td>59NAEDE603</td><td>20606643625</td><td>VELEZVAR DISTRIBUIDORES S.A.C.</td></tr>
+            <tr><td>14</td><td>1448924</td><td>ESCRIBA ANTON, KENNETH HRISTO JOSE</td><td>59NAEDE603</td><td>20606643625</td><td>VELEZVAR DISTRIBUIDORES S.A.C.</td></tr>
+        </tbody>
+    </table>
+</div>
+
+<div class="table-container" id="tableContainer7">
+    
+    <table id="dataTable7"><h2>BLOQUE 59NAIDE401</h2>
+        <thead>
+            <tr>
+                <th>ITEM</th>
+                <th>ID</th>
+                <th>APELLIDOS Y NOMBRES</th>
+                <th>BLOQUE</th>
+                <th>RUC</th>
+                <th>RAZON SOCIAL</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr><td>98</td><td>1547182</td><td>RAMIREZ MORENO, LUIS JHAIR</td><td>59NAIDE401</td><td>20550845645</td><td>INTELSE PERU S.A.C.</td></tr>
+            <tr><td>99</td><td>1529373</td><td>ANTEZANA QUILO, EDGAR DAVID</td><td>59NAIDE401</td><td>20600971671</td><td>IMPORTACIONES Y DISTRIBUCIONES EL MUNDIAL S.A.C.</td></tr>
+            <tr><td>100</td><td>1529368</td><td>TORRES MANCILLA, GUISELLE LEA</td><td>59NAIDE401</td><td>20392817167</td><td>TANDEM TEXTIL S.A.C.</td></tr>
+            <tr><td>101</td><td>1531424</td><td>RODRIGUEZ ZUÑIGA, PIEROL GLIMER</td><td>59NAIDE401</td><td>20600996968</td><td>DISTRIBUIDORA DE HERRAMIENTAS Y ACCESORIOS FERREBOOM S.A.C.</td></tr>
+            <tr><td>102</td><td>1501991</td><td>HUAMAN SAAVEDRA, SAMUEL JOSHUA</td><td>59NAIDE401</td><td>20609661390</td><td>EDITORIAL BOOKMASTER E.I.R.L.</td></tr>
+            <tr><td>103</td><td>1474931</td><td>PORTA GUERRA, YENIFER ANDREA</td><td>59NAIDE401</td><td>20601432715</td><td>SERVITEC MULTISYSTEM S.A.C.</td></tr>
+            <tr><td>104</td><td>1461690</td><td>GUTIÉRREZ VIGILIO, DIEGO ANDRES</td><td>59NAIDE401</td><td>20257083269</td><td>MECANICA SAN MIGUEL S.A.</td></tr>
+            <tr><td>105</td><td>1518444</td><td>ESPINOZA HUERTA, MARIA LILIANA</td><td>59NAIDE401</td><td>20100089051</td><td>CONFECCIONES LANCASTER S.A.</td></tr>
+            <tr><td>106</td><td>1531423</td><td>SANDONAZ ALEGRE, FABIAN DONALDO</td><td>59NAIDE401</td><td>10104276844</td><td>ALEGRE MILLA DOMINGO DE GUZMAN</td></tr>
+            <tr><td>107</td><td>1538825</td><td>CASTILLO BUSTAMANTE, JEAN PIERE</td><td>59NAIDE401</td><td>20131368071</td><td>MUNICIPALIDAD DE LA VICTORIA</td></tr>
+            <tr><td>108</td><td>1531655</td><td>SEMINARIO SANCHEZ, ANDREA ISABEL</td><td>59NAIDE401</td><td>20100028698</td><td>FERREYROS SOCIEDAD ANÓNIMA</td></tr>
+            <tr><td>109</td><td>1342043</td><td>MUCHA ARTICA, JOSE MARCOS</td><td>59NAIDE401</td><td>20601098530</td><td>L & M RENT A CAR SERVICIOS GENERALES S.A.C.</td></tr>
+            <tr><td>110</td><td>1529370</td><td>ZAVALETA YUPANQUI, FLOR KARYNA</td><td>59NAIDE401</td><td>20448716881</td><td>GRUPO TACTUS S.A.C.</td></tr>
+            <tr><td>111</td><td>1521251</td><td>GUERRA ARRIETA, CESAR ALBERTO</td><td>59NAIDE401</td><td>20505679076</td><td>ROSSETTI S.A.C.</td></tr>
+            <tr><td>112</td><td>1529332</td><td>QUISPE CCONISLLA, JAREN ALEXIS</td><td>59NAIDE401</td><td>20100653487</td><td>FUNDICION FERROSA SOCIEDAD ANONIMA CERRADA</td></tr>
+            <tr><td>113</td><td>1498592</td><td>HUANQUI QUISPE, FAVIANA TRILCE PASTORA</td><td>59NAIDE401</td><td>20606144190</td><td>GRUPO AGAMA S.A.C.</td></tr>
+        </tbody>
+    </table>
+</div>
+
+<div class="table-container" id="tableContainer8">
+    
+    <table id="dataTable8"><h2>BLOQUE 59NAIDE402</h2>
+        <thead>
+            <tr>
+                <th>ITEM</th>
+                <th>ID</th>
+                <th>APELLIDOS Y NOMBRES</th>
+                <th>BLOQUE</th>
+                <th>RUC</th>
+                <th>RAZON SOCIAL</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr><td>1</td><td>1529376</td><td>ALARCON MEDINA, MARIA DEL PILAR</td><td>59NAIDE402</td><td>20520724762</td><td>RODITEX SOCIEDAD ANONIMA CERRADA</td></tr>
+            <tr><td>2</td><td>1513405</td><td>BERNABÉ CÁRDENAS, ROSANGELA</td><td>59NAIDE402</td><td>10455840029</td><td>VEGA DE LA CRUZ GUIANNINA MARCIA</td></tr>
+            <tr><td>3</td><td>1545385</td><td>BORDA CHAICO, STIVEN</td><td>59NAIDE402</td><td>20458810673</td><td>AUTOMOTRIZ GENERAL DEL PERU SOCIEDAD ANONIMA - AGEPSA</td></tr>
+            <tr><td>4</td><td>1504146</td><td>BALDEON PUCUHUAYLA, ANGIE MILADY</td><td>59NAIDE402</td><td>20553328510</td><td>HUASCARAN ASESORES Y CONSULTORES EMPRESARIALES S.A.C.</td></tr>
+            <tr><td>5</td><td>1473469</td><td>CHAMPI SIERRA, CHRISTOPHER NOE</td><td>59NAIDE402</td><td>20427919111</td><td>DINET S.A.</td></tr>
+            <tr><td>6</td><td>1501988</td><td>CHANDUVI SAAVEDRA, MARI CIELO ROSA</td><td>59NAIDE402</td><td>20100171814</td><td>HIDROSTAL S.A.</td></tr>
+            <tr><td>7</td><td>1506368</td><td>COLCHADO MENA, JEAN FRANCO AARON</td><td>59NAIDE402</td><td>20520724762</td><td>RODITEX SOCIEDAD ANONIMA CERRADA</td></tr>
+            <tr><td>8</td><td>1499833</td><td>CONDORI BEDOYA, RUBI MARGOT</td><td>59NAIDE402</td><td>20510468032</td><td>C & C TRANSPORT CORPORATION SOCIEDAD ANONIMA CERRADA</td></tr>
+            <tr><td>9</td><td>1504145</td><td>CORDOVA SABOYA, YEI FELIX</td><td>59NAIDE402</td><td>20347721698</td><td>MAGALY ALWAYS E.I.R.L.</td></tr>
+            <tr><td>10</td><td>1509814</td><td>CORNEJO PAICO, JEANPIERRE HECTOR</td><td>59NAIDE402</td><td>20424580237</td><td>INVERSIONES MARTINEZ & CHIHUANTITO S.A.C.</td></tr>
+            <tr><td>11</td><td>1499834</td><td>ESCRIBA CUMPA, JHOSEP ALEXANDER</td><td>59NAIDE402</td><td>20551440282</td><td>ABC MINERA Y METALMECANICA S.A.C.</td></tr>
+            <tr><td>12</td><td>1538815</td><td>FIGUEROA GUTIERREZ, NAOMI MILAGROS</td><td>59NAIDE402</td><td>20100064571</td><td>INDUSTRIAS NETTALCO S.A.</td></tr>
+            <tr><td>13</td><td>1530005</td><td>GUAYLUPO HUAMANI, SEBASTIAN STEVEN</td><td>59NAIDE402</td><td>20100377358</td><td>CHEMICAL MINING S.A.</td></tr>
+            <tr><td>14</td><td>1521246</td><td>DELGADO CHAVEZ, JEREMY MANUEL</td><td>59NAIDE402</td><td>20505669607</td><td>METALURGIA DEL FIERRO Y EL COBRE SOCIEDAD ANONIMA CERRADA</td></tr>
+            <tr><td>15</td><td>1505168</td><td>HUARCAYA TORRES, JANDEL DAYER</td><td>59NAIDE402</td><td>20551652972</td><td>CORPORACION FRIO HIELOS DEL PERU E.I.R.L.</td></tr>
+            <tr><td>16</td><td>1438206</td><td>LAPA GARFIAS, JOAQUIN EDUARDO</td><td>59NAIDE402</td><td>20610263471</td><td>REAA PRODUCCIONES E.I.R.L.</td></tr>
+            <tr><td>17</td><td>1232777</td><td>MENDOZA INCA, DANIEL MARIO</td><td>59NAIDE402</td><td>20608185071</td><td>POLYSACK E.I.R.L.</td></tr>
+            <tr><td>18</td><td>1545382</td><td>PUCUHUAYLA PAREDES, KATHERIN ARACELI</td><td>59NAIDE402</td><td>20100093830</td><td>PANADERIA SAN JORGE S.A.</td></tr>
+            <tr><td>19</td><td>1427056</td><td>RIOS MENDOZA, MARIA JESUS</td><td>59NAIDE402</td><td>20515694740</td><td>AYAME S.A.C.</td></tr>
+            <tr><td>20</td><td>1545384</td><td>URURI BARTUREN, JUAN DAVID</td><td>59NAIDE402</td><td>20553328510</td><td>HUASCARAN ASESORES Y CONSULTORES EMPRESARIALES S.A.C.</td></tr>
+        </tbody>
+    </table>
+</div>
+
+
+<div class="table-container" id="tableContainer9">
+    
+    <table id="dataTable9"><h2>BLOQUE 59NAIDE501</h2>
+        <thead>
+            <tr>
+                <th>ITEM</th>
+                <th>ID</th>
+                <th>APELLIDOS Y NOMBRES</th>
+                <th>BLOQUE</th>
+                <th>RUC</th>
+                <th>RAZON SOCIAL</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr><td>1</td><td>1426619</td><td>ARIAS ASTETE, MATIAS ALEJANDRO</td><td>59NAIDE501</td><td>20601432715</td><td>SERVITEC MULTISYSTEM S.A.C.</td></tr>
+            <tr><td>2</td><td>1474725</td><td>ATOCHE RAMOS, CAMILA TZARINE</td><td>59NAIDE501</td><td>20510285388</td><td>INDUSTRIAS DIVERSAS SERVICIOS Y COMERCIO SOCIEDAD ANONIMA CERRADA</td></tr>
+            <tr><td>3</td><td>1486490</td><td>CASTILLO VELIZ, CLAUDIA FERNANDA</td><td>59NAIDE501</td><td>20608014544</td><td>COMPAÑIA TEXTIL DEL CENTRO S.A.C.</td></tr>
+            <tr><td>4</td><td>1481720</td><td>DELGADO MEZA, FABRIZIO MATÍAS</td><td>59NAIDE501</td><td>20100776562</td><td>MALVEX DEL PERU S.A.</td></tr>
+            <tr><td>5</td><td>1473471</td><td>FUENTES TORRES, KEVIN RAFAEL</td><td>59NAIDE501</td><td>20514584789</td><td>COMPAÑIA NACIONAL DE CHOCOLATES DE PERU S.A.</td></tr>
+            <tr><td>6</td><td>1481686</td><td>MONTALVO AGURTO, FRANCISCA MARIANA</td><td>59NAIDE501</td><td>20607109169</td><td>PUNTO V INTERNATIONAL E.I.R.L.</td></tr>
+            <tr><td>7</td><td>1460598</td><td>VERGARA TISNADO, RODRIGO OSWALDO</td><td>59NAIDE501</td><td>20451498461</td><td>CONFECCIONES TRENTO S.A.C.</td></tr>
+        </tbody>
+    </table>
+</div>
+
+<div class="table-container" id="tableContainer10">
+    
+    <table id="dataTable10"><h2>BLOQUE 59NAIDE502</h2>
+        <thead>
+            <tr>
+                <th>ITEM</th>
+                <th>ID</th>
+                <th>APELLIDOS Y NOMBRES</th>
+                <th>BLOQUE</th>
+                <th>RUC</th>
+                <th>RAZON SOCIAL</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr><td>1</td><td>1135610</td><td>ANGULO SORIA, JORGE ALEXANDER</td><td>59NAIDE601</td><td>20610138641</td><td>AIRZZONE PERU SOCIEDAD COMERCIAL DE RESPONSABILIDAD LIMITADA</td></tr>
+            <tr><td>2</td><td>1434647</td><td>BONIFACIO NOLASCO, ANDER EDIZON</td><td>59NAIDE601</td><td>20100063761</td><td>FUNDICION CENTRAL S.A.</td></tr>
+            <tr><td>3</td><td>1452399</td><td>CRUZ HERRERA, MARK ANTHONY JESUS</td><td>59NAIDE601</td><td>20601338204</td><td>METROLOGIA E INSTRUMENTACION INDUSTRIAL S.A.C. - METRINDUST S.A.C.</td></tr>
+            <tr><td>4</td><td>1458285</td><td>ENCINAS LOPEZ, HILARY NAYDU AZUCENA</td><td>59NAIDE601</td><td>20605020233</td><td>SCHAFT ROADWAYS E.I.R.L. - SCHAFT</td></tr>
+            <tr><td>5</td><td>1243143</td><td>HUAMAN QUISPE, ANTONY JEANPIERE</td><td>59NAIDE601</td><td>20347268683</td><td>LABORATORIOS AC FARMA S.A.</td></tr>
+            <tr><td>6</td><td>1439338</td><td>LLAMO BENAVENTE, LIZETH NICOLE</td><td>59NAIDE601</td><td>20493111681</td><td>INSERTEL (INGENIERIA Y SERVICIOS DE TELECOMUNICACIONES SOCIEDAD COMERCIAL DE RESPONSABILIDAD LTDA)</td></tr>
+            <tr><td>7</td><td>1258671</td><td>PARAGUAY VELIZ, CRUSBEL CRISPIN</td><td>59NAIDE601</td><td>20505837755</td><td>PANIFICADORA TORRES S.A.C.</td></tr>
+            <tr><td>8</td><td>1425261</td><td>PAREDES LUYO, ANAHI LISSET</td><td>59NAIDE601</td><td>20605951253</td><td>TECNICA DE VALVULAS E.I.R.L.</td></tr>
+            <tr><td>9</td><td>1417943</td><td>PIÑAS GONZALES, ROBERTO JUNIOR</td><td>59NAIDE601</td><td>20553162794</td><td>REPRESENTACIONES HUARANCCA S.A.C.</td></tr>
+            <tr><td>10</td><td>1459447</td><td>QUEVEDO CHAVEZ, PAMELA ROSMERY</td><td>59NAIDE601</td><td>20392118749</td><td>BALIQ JOYAS S.A.C.</td></tr>
+            <tr><td>11</td><td>1422501</td><td>RENTERIA SANTISTEBAN, RUBI</td><td>59NAIDE601</td><td>20553476209</td><td>TEMPLADOS LIMATAMBO S.A.C.</td></tr>
+            <tr><td>12</td><td>1439319</td><td>SOLIS CHUMBES, YADIRA DANIELA</td><td>59NAIDE601</td><td>20100278708</td><td>LABORATORIOS BIOMONT S.A.</td></tr>
+            <tr><td>13</td><td>1462684</td><td>VILLAR HUAMANI, RUBI SOL ANGIE</td><td>59NAIDE601</td><td>20609407183</td><td>IMPORTACIONES CHA HUAM E.I.R.L.</td></tr>
+        </tbody>
+    </table>
+</div>
+
+
+<div class="table-container" id="tableContainer12">
+    
+    <table id="dataTable12"><h2>BLOQUE 59NAIDE602</h2>
+        <thead>
+            <tr>
+                <th>ITEM</th>
+                <th>ID</th>
+                <th>APELLIDOS Y NOMBRES</th>
+                <th>BLOQUE</th>
+                <th>RUC</th>
+                <th>RAZON SOCIAL</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr><td>1</td><td>1450461</td><td>DIAZ COLCA, CAROLINA</td><td>59NAIDE602</td><td>20378620458</td><td>TRADING MIR S.A.</td></tr>
+            <tr><td>2</td><td>1418278</td><td>CAMARENA ROMERO, CRISTIAN ANTHONY</td><td>59NAIDE602</td><td>10254005679</td><td>VALENCIA NICOLAS PAULINA</td></tr>
+            <tr><td>3</td><td>1410479</td><td>ROMERO ZAVALA, ZANELLI DEL PILAR</td><td>59NAIDE602</td><td>20505837755</td><td>PANIFICADORA TORRES S.A.C.</td></tr>
+            <tr><td>4</td><td>1443311</td><td>VICHARRA VILLARROEL, MARIA BELEN</td><td>59NAIDE602</td><td>20357259976</td><td>CONFIPETROL ANDINA S.A.</td></tr>
+            <tr><td>5</td><td>1435579</td><td>HANCCO NOA, ROSA DEL PILAR</td><td>59NAIDE602</td><td>20608511556</td><td>COCO BAMBU PERU S.A.C.</td></tr>
+            <tr><td>6</td><td>1427004</td><td>VEGA PACHERREZ, ESTEFANY EYLEN</td><td>59NAIDE602</td><td>20378620458</td><td>TRADING MIR S.A.</td></tr>
+            <tr><td>7</td><td>1100708</td><td>GAMION FELIZ, JOSE ARMANDO</td><td>59NAIDE602</td><td>20424580237</td><td>INVERSIONES MARTINEZ & CHIHUANTITO S.A.C.</td></tr>
+            <tr><td>8</td><td>1308645</td><td>CASTRO HUAMANI, RONALDO SANTOS</td><td>59NAIDE602</td><td>20609360896</td><td>ESCUELA DE CONDUCTORES ULICAR MULTISERVICES E.I.R.L.</td></tr>
+            <tr><td>9</td><td>1456923</td><td>NAVARRO TRINIDAD, MIGUEL ANGEL</td><td>59NAIDE602</td><td>20202578145</td><td>COMED E.I.R.L.</td></tr>
+            <tr><td>10</td><td>1448052</td><td>MENDOZA SINCHE, GERSON MIGUEL</td><td>59NAIDE602</td><td>20512770313</td><td>BILLPLAST EMPRESA INDIVIDUAL DE RESPONSABILIDAD LIMITADA</td></tr>
+            <tr><td>11</td><td>1421220</td><td>SANTIAGO VALENCIA, LIZ GERALDINE</td><td>59NAIDE602</td><td>10254005679</td><td>VALENCIA NICOLAS PAULINA</td></tr>
+            <tr><td>12</td><td>1430294</td><td>LLICO RUDAS, JUAN CARLOS</td><td>59NAIDE602</td><td>20518721268</td><td>M Y G HYDRAULIC SERVICE S.A.C.</td></tr>
+            <tr><td>13</td><td>1434317</td><td>GUTIERREZ RAMIREZ, SAIDA MARLENI</td><td>59NAIDE602</td><td>20505132204</td><td>LAKASSA. S.R.L.</td></tr>
+        </tbody>
+    </table>
+</div>
+
+<div class="table-container" id="tableContainer13">
+    
+    <table id="dataTable13"><h2>BLOQUE 59NALDE401</h2>
+        <thead>
+            <tr>
+                <th>ITEM</th>
+                <th>ID</th>
+                <th>APELLIDOS Y NOMBRES</th>
+                <th>BLOQUE</th>
+                <th>RUC</th>
+                <th>RAZON SOCIAL</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr><td>1</td><td>1524568</td><td>CRUZ BLAS, JOSE FERNANDO</td><td>59NALDE401</td><td>20538053881</td><td>UMP DE PERU SOCIEDAD ANONIMA CERRADA</td></tr>
+            <tr><td>2</td><td>1486529</td><td>ESTELA RIVERA, CRHISTIAN GIORDANO</td><td>59NALDE401</td><td>10258074616</td><td>ESTELA CARITA GABINO</td></tr>
+            <tr><td>3</td><td>1479088</td><td>GARCIA TAVARA, MICHAEL EMIER JOB</td><td>59NALDE401</td><td>20609790386</td><td>ASESORES EN COMERCIO GT S.A.C.</td></tr>
+            <tr><td>4</td><td>1518463</td><td>GUEVARA PARIONA, HARUMI NICOLE</td><td>59NALDE401</td><td>20603856407</td><td>SOLUCIONES INDUSTRIALES 360 S.A.C.</td></tr>
+            <tr><td>5</td><td>1518431</td><td>LOBO ALVARO, DEYCI DAYANA</td><td>59NALDE401</td><td>20566450128</td><td>OCEAN PROJECTS LOGISTICS SOCIEDAD ANONIMA CERRADA - OCEAN PROJECTS LOGISTICS SAC</td></tr>
+            <tr><td>6</td><td>1524736</td><td>NIEVES MASGO, AMY JAMILIE</td><td>59NALDE401</td><td>20552515332</td><td>CONFECCIONES GAMAS & ALESSANDRO E.I.R.L</td></tr>
+            <tr><td>7</td><td>1518446</td><td>QUEZADA DIAZ, SEBASTIAN FERNANDO</td><td>59NALDE401</td><td>20551741053</td><td>YOBEL SCM SOCIEDAD ANONIMA CERRADA - YOBEL SCM S.A.C.</td></tr>
+            <tr><td>8</td><td>1518442</td><td>ROJAS NAZARIO, YISET YURI</td><td>59NALDE401</td><td>20506613265</td><td>TEGOTEX S.A.C.</td></tr>
+            <tr><td>9</td><td>1525552</td><td>VILLAFRANCA CHAVEZ, ALISON YERELI</td><td>59NALDE401</td><td>20552515332</td><td>CONFECCIONES GAMAS & ALESSANDRO E.I.R.L</td></tr>
+        </tbody>
+    </table>
+</div>
+
+<div class="table-container" id="tableContainer14">
+    
+    <table id="dataTable14"><h2>BLOQUE 59NALDE501</h2>
+        <thead>
+            <tr>
+                <th>ITEM</th>
+                <th>ID</th>
+                <th>APELLIDOS Y NOMBRES</th>
+                <th>BLOQUE</th>
+                <th>RUC</th>
+                <th>RAZON SOCIAL</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr><td>1</td><td>1465186</td><td>BLANCO PEREZ, SAYUMY CRISTINA</td><td>59NALDE501</td><td>20610671668</td><td>SOLIPAL ELETTRICA S.A.C.</td></tr>
+            <tr><td>2</td><td>1424910</td><td>CAJUSOL CHAPOÑAN, KAREN BETZABET</td><td>59NALDE501</td><td>20565639626</td><td>CORPORACION TRIVER S.A.C.</td></tr>
+            <tr><td>3</td><td>1479089</td><td>PACHECO ARIAS, MAYELI TREYSI</td><td>59NALDE501</td><td>10105046699</td><td>CASTRO JESUS SILVIA PAULA</td></tr>
+            <tr><td>4</td><td>1479087</td><td>LOAYZA HUILLCAPUMA, MELANI YULY</td><td>59NALDE501</td><td>20554501371</td><td>DISPERSA INTERNACIONAL S.R.L.</td></tr>
+            <tr><td>5</td><td>1479086</td><td>URQUIA GOMEZ, JOHAN DANIEL</td><td>59NALDE501</td><td>20348133889</td><td>LAVANDERIA INDUSTRIAL LANDEO S.A.C.</td></tr>
+            <tr><td>6</td><td>1480003</td><td>MEOÑO RUIZ, LEIDY ANNELEY</td><td>59NALDE501</td><td>20601014956</td><td>ELIBEM IMPORT E.I.R.L.</td></tr>
+            <tr><td>7</td><td>1176850</td><td>QUISOCALA CAHUAYA, LUZ FABIOLA</td><td>59NALDE501</td><td>20501482626</td><td>VARVELA CONTRATISTAS GENERALES EIRL</td></tr>
+        </tbody>
+    </table>
+</div>
+
+
+<div class="table-container" id="tableContainer15">
+    
+    <table id="dataTable15"><h2>BLOQUE 59NALDE601</h2>
+        <thead>
+            <tr>
+                <th>ITEM</th>
+                <th>ID</th>
+                <th>APELLIDOS Y NOMBRES</th>
+                <th>BLOQUE</th>
+                <th>RUC</th>
+                <th>RAZON SOCIAL</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr><td>1</td><td>1433944</td><td>ARZAPALO CORDOVA, AUGUSTO ROBERTO</td><td>59NALDE601</td><td>20427896740</td><td>NEW EXPO S.A.C.</td></tr>
+            <tr><td>2</td><td>1263952</td><td>CONDOR SINCHE, ANDERSON GIANCARLOS</td><td>59NALDE601</td><td>20447712505</td><td>GRANITOS DE VIDA EMPRESA INDIVIDUAL DE RESPONSABILIDAD LIMITADA</td></tr>
+            <tr><td>3</td><td>1429515</td><td>DOMINGO GOMEZ, LIESEL FANNY</td><td>59NALDE601</td><td>20100095450</td><td>LAIVE S A</td></tr>
+            <tr><td>4</td><td>1446168</td><td>FLORES CENTENO, MIRELLA GUADALUPE</td><td>59NALDE601</td><td>20563306158</td><td>JUVALITO REPUESTOS SOCIEDAD ANONIMA CERRADA</td></tr>
+            <tr><td>5</td><td>1368803</td><td>GUILLEN PEÑA, WALTER</td><td>59NALDE601</td><td>20517070441</td><td>IMPORTACIONES BENJI S.A.C.</td></tr>
+            <tr><td>6</td><td>1439354</td><td>JULCA LOPEZ, JHON OLIBER</td><td>59NALDE601</td><td>20600667875</td><td>HAN FLOW S.A.</td></tr>
+            <tr><td>7</td><td>1432093</td><td>HUAÑAHUE NARVAEZ, HILARIO JOSE</td><td>59NALDE601</td><td>20547636202</td><td>INNOVALED PERU S.A.C.</td></tr>
+            <tr><td>8</td><td>1434238</td><td>PELAEZ CONTRERAS, JUAN JOSE JUNIOR</td><td>59NALDE601</td><td>20100057523</td><td>ASCENSORES S A</td></tr>
+            <tr><td>9</td><td>1447839</td><td>SÁNCHEZ MUNAYLLA, THAIS BELÉN</td><td>59NALDE601</td><td>20606080949</td><td>BIOSAFE INDUSTRIES S.A.C.</td></tr>
+            <tr><td>10</td><td>1429883</td><td>MANYA CAHUANA, SELENA KATHERINE</td><td>59NALDE601</td><td>20101362702</td><td>CONFECCIONES TEXTIMAX S A</td></tr>
+        </tbody>
+    </table>
+</div>
+
+
+<div class="table-container" id="tableContainer16">
+    
+    <table id="dataTable16"><h2>BLOQUE 59PCBDS401</h2>
+        <thead>
+            <tr>
+                <th>ITEM</th>
+                <th>ID</th>
+                <th>APELLIDOS Y NOMBRES</th>
+                <th>BLOQUE</th>
+                <th>RUC</th>
+                <th>RAZON SOCIAL</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr><td>1</td><td>1547436</td><td>AGUIRRE HILARIO, JONATHAN URIEL</td><td>59PCBDS401</td><td>20610936165</td><td>JHARDSYSTEX S.A.C.</td></tr>
+            <tr><td>2</td><td>1531376</td><td>AREVALO CLEMENTE, ANTONY YUORFFI</td><td>59PCBDS401</td><td>20610936165</td><td>JHARDSYSTEX S.A.C.</td></tr>
+            <tr><td>3</td><td>1521241</td><td>AREVALO QUISPE, GINO</td><td>59PCBDS401</td><td>20610936165</td><td>JHARDSYSTEX S.A.C.</td></tr>
+            <tr><td>4</td><td>1538546</td><td>BALTAZAR ESPINOZA, ANTONY JESUS</td><td>59PCBDS401</td><td>20101308678</td><td>CIA INDUSTRIAL CONTINENTAL S.A.C.</td></tr>
+            <tr><td>5</td><td>1531624</td><td>CASTILLO SOLORZANO, MARCO JOSHUA</td><td>59PCBDS401</td><td>20610936165</td><td>JHARDSYSTEX S.A.C.</td></tr>
+            <tr><td>6</td><td>1506334</td><td>DIANDERAS VARGAS, ADRIEL ANYELO</td><td>59PCBDS401</td><td>20609504243</td><td>HUALKANA PERU S.A.C.</td></tr>
+            <tr><td>7</td><td>1522115</td><td>ECHEGARAY DOLORIER, NICOLAS</td><td>59PCBDS401</td><td>20459858572</td><td>FABRICAC.INDUSTRIAL OROPEZA DEXTRE SRL.</td></tr>
+            <tr><td>8</td><td>1531372</td><td>FERNANDEZ RIVERA, ALDAIR ALI</td><td>59PCBDS401</td><td>20392817167</td><td>TANDEM TEXTIL S.A.C.</td></tr>
+            <tr><td>9</td><td>1505408</td><td>GABRIEL ITO, ANTHONY PATRICK</td><td>59PCBDS401</td><td>20535552330</td><td>VASCO TECHNOLOGIES S.A.C.</td></tr>
+            <tr><td>10</td><td>1531931</td><td>MARIN FLORES, JOSUE JOSIAS</td><td>59PCBDS401</td><td>20556121029</td><td>LEVERIT PERU S.A.C.</td></tr>
+            <tr><td>11</td><td>1527082</td><td>MERY RODRIGUEZ, JESÚS ADRIEL</td><td>59PCBDS401</td><td>20609504243</td><td>HUALKANA PERU S.A.C.</td></tr>
+            <tr><td>12</td><td>1531371</td><td>MONAGO MARTICORENA, LEONEL ANGEL</td><td>59PCBDS401</td><td>20601432715</td><td>SERVITEC MULTISYSTEM S.A.C.</td></tr>
+            <tr><td>13</td><td>1510246</td><td>NUÑEZ CÁCERES, ERICK MARIO</td><td>59PCBDS401</td><td>20601432715</td><td>SERVITEC MULTISYSTEM S.A.C.</td></tr>
+            <tr><td>14</td><td>1545408</td><td>PEÑA ARMAS, HAROLD MARTIN</td><td>59PCBDS401</td><td>20609504243</td><td>HUALKANA PERU S.A.C.</td></tr>
+            <tr><td>15</td><td>1527071</td><td>QUISPE CCARI, GIAN CARLOS</td><td>59PCBDS401</td><td>20556121029</td><td>LEVERIT PERU S.A.C.</td></tr>
+            <tr><td>16</td><td>1500090</td><td>SANTOS MAMANI, JORDAN GONZALO</td><td>59PCBDS401</td><td>20609504243</td><td>HUALKANA PERU S.A.C.</td></tr>
+            <tr><td>17</td><td>1521243</td><td>SOLANO PIÑAS, GIANCARLO</td><td>59PCBDS401</td><td>20610936165</td><td>JHARDSYSTEX S.A.C.</td></tr>
+        </tbody>
+    </table>
+</div>
+
+
+<div class="table-container" id="tableContainer17">
+    
+    <table id="dataTable17"><h2>BLOQUE 59PCBDS402</h2>
+        <thead>
+            <tr>
+                <th>ITEM</th>
+                <th>ID</th>
+                <th>APELLIDOS Y NOMBRES</th>
+                <th>BLOQUE</th>
+                <th>RUC</th>
+                <th>RAZON SOCIAL</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr><td>1</td><td>1426557</td><td>DEL POZO LUJAN, JOSEPH ALEXANDRE LUIS</td><td>59PCBDS402</td><td>20545122520</td><td>J & P PERIFERICOS S.A.C.</td></tr>
+            <tr><td>2</td><td>1464561</td><td>TORRES GODOY, RICARDO GIANPIER</td><td>59PCBDS402</td><td>20609504243</td><td>HUALKANA PERU S.A.C.</td></tr>
+            <tr><td>3</td><td>1487754</td><td>RAMOS REYES, FRANKLIN FELIPE</td><td>59PCBDS402</td><td>20609504243</td><td>HUALKANA PERU S.A.C.</td></tr>
+            <tr><td>4</td><td>1479093</td><td>JIMENEZ TOLENTINO, ZULEMA</td><td>59PCBDS402</td><td>20610041290</td><td>H & R MULTISERVICIOS INFORMATICOS S.A.C.</td></tr>
+            <tr><td>5</td><td>1527354</td><td>MURGA CHOQUE, JUAN JOSE GUILLERMO</td><td>59PCBDS402</td><td>20610041290</td><td>H & R MULTISERVICIOS INFORMATICOS S.A.C.</td></tr>
+            <tr><td>6</td><td>1505417</td><td>REYES SIMON, JAFET LEONARDO DANIEL</td><td>59PCBDS402</td><td>20545122520</td><td>J & P PERIFERICOS S.A.C.</td></tr>
+            <tr><td>7</td><td>1501994</td><td>ZAGA TOLEDO, KORANKA ELIZABETH</td><td>59PCBDS402</td><td>10316826704</td><td>LEON OSORIO GROVERT PEDRO</td></tr>
+            <tr><td>8</td><td>1527350</td><td>CASTILLO IRRAZABAL CHAYLA YASMITH</td><td>59PCBDS402</td><td>10316826704</td><td>LEON OSORIO GROVERT PEDRO</td></tr>
+            <tr><td>9</td><td>1504135</td><td>CERHUAYO SANTOYO CHIDER NAHUEL</td><td>59PCBDS402</td><td>20552640315</td><td>UNION DE NEGOCIOS INTERNACIONALES MARKOVIC S.A.C. - UNIMARKOVIC S.A.C.</td></tr>
+            <tr><td>10</td><td>1505405</td><td>DAVILA MARCATINCO ALEXA GRACE</td><td>59PCBDS402</td><td>20609504243</td><td>HUALKANA PERU S.A.C.</td></tr>
+            <tr><td>11</td><td>1505421</td><td>ESTREMADOYRO CORONADO JOSHUA FABRIZIO</td><td>59PCBDS402</td><td>20554776397</td><td>LIBRA´S DESIGN & CONSTRUCTION S.A.C. - LIBRA´S S.A.C.</td></tr>
+            <tr><td>12</td><td>1505414</td><td>FALCON VELA XIOMARA MEYLEN</td><td>59PCBDS402</td><td>20554776397</td><td>LIBRA´S DESIGN & CONSTRUCTION S.A.C. - LIBRA´S S.A.C.</td></tr>
+            <tr><td>13</td><td>1505406</td><td>VILLARROEL JAIMES JOSE LUIS</td><td>59PCBDS402</td><td>20554776397</td><td>LIBRA´S DESIGN & CONSTRUCTION S.A.C. - LIBRA´S S.A.C.</td></tr>
+            <tr><td>14</td><td>1527076</td><td>BOCANEGRA MENDOZA CARLO JOAQUIN</td><td>59PCBDS402</td><td>20554776397</td><td>LIBRA´S DESIGN & CONSTRUCTION S.A.C. - LIBRA´S S.A.C.</td></tr>
+        </tbody>
+    </table>
+</div>
+
+
+<div class="table-container" id="tableContainer18">
+    
+    <table id="dataTable18"><h2>BLOQUE 59PCBDS403</h2>
+        <thead>
+            <tr>
+                <th>ITEM</th>
+                <th>ID</th>
+                <th>APELLIDOS Y NOMBRES</th>
+                <th>BLOQUE</th>
+                <th>RUC</th>
+                <th>RAZON SOCIAL</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr><td>235</td><td>1537922</td><td>VALLES YATACO, GONZALO</td><td>59PCBDS403</td><td>20507839283</td><td>LETTERA GRAFICA SAC</td></tr>
+        </tbody>
+    </table>
+</div>
+
+<div class="table-container" id="tableContainer19">
+    
+    <table id="dataTable19"><h2>BLOQUE 59PCBDS501</h2>
+        <thead>
+            <tr>
+                <th>ITEM</th>
+                <th>ID</th>
+                <th>APELLIDOS Y NOMBRES</th>
+                <th>BLOQUE</th>
+                <th>RUC</th>
+                <th>RAZON SOCIAL</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr><td>1</td><td>1482427</td><td>CONDOR PONTE, JHEYSON ENRIQUE</td><td>59PCBDS501</td><td>20511358907</td><td>CORPORACION DE INDUSTRIAS STANDFORD SOCIEDAD ANONIMA CERRADA</td></tr>
+            <tr><td>2</td><td>1410153</td><td>DE LA CRUZ COLLAZOS, MISSAEL ANDERSON</td><td>59PCBDS501</td><td>20610263471</td><td>REAA PRODUCCIONES E.I.R.L.</td></tr>
+            <tr><td>3</td><td>1487977</td><td>GAMARRA BRICEÑO, PIERO ALEXANDER</td><td>59PCBDS501</td><td>20610263471</td><td>REAA PRODUCCIONES E.I.R.L.</td></tr>
+            <tr><td>4</td><td>1456834</td><td>GAVILANO LAZARO, STEVEN ALEXANDER</td><td>59PCBDS501</td><td>20610263471</td><td>REAA PRODUCCIONES E.I.R.L.</td></tr>
+            <tr><td>5</td><td>1449467</td><td>FLORIAN BURGA, ADRIANO GONZALO</td><td>59PCBDS501</td><td>20100051169</td><td>NICOLL PERU S.A.</td></tr>
+            <tr><td>6</td><td>1312376</td><td>MICHI PANDURO, JACK DAYER</td><td>59PCBDS501</td><td>20610263471</td><td>REAA PRODUCCIONES E.I.R.L.</td></tr>
+            <tr><td>7</td><td>1396656</td><td>VILLANO ORIHUELA, SEBASTIAN CLAUDIO</td><td>59PCBDS501</td><td>20610936165</td><td>JHARDSYSTEX S.A.C.</td></tr>
+        </tbody>
+    </table>
+</div>
+
+<div class="table-container" id="tableContainer20">
+    
+    <table id="dataTable20"><h2>BLOQUE 59PCBDS601</h2>
+        <thead>
+            <tr>
+                <th>ITEM</th>
+                <th>ID</th>
+                <th>APELLIDOS Y NOMBRES</th>
+                <th>BLOQUE</th>
+                <th>RUC</th>
+                <th>RAZON SOCIAL</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr><td>1</td><td>1436607</td><td>SANCHEZ CORDOVA, ROBERT SEBASTIAN</td><td>59PCBDS601</td><td>20514584789</td><td>COMPAÑIA NACIONAL DE CHOCOLATES DE PERU S.A.</td></tr>
+            <tr><td>2</td><td>1432083</td><td>QUISPE VARGAS, GIULIO STEFANO</td><td>59PCBDS601</td><td>20609504243</td><td>HUALKANA PERU S.A.C.</td></tr>
+            <tr><td>3</td><td>1386560</td><td>DE LA CRUZ CARLOS, ARON VALERIO</td><td>59PCBDS601</td><td>10436632695</td><td>MOLINA SAMARITANO EDWIN NOEL</td></tr>
+            <tr><td>4</td><td>1389314</td><td>ROMÁN LAZO, JKARBITH KAROLL JIMMY</td><td>59PCBDS601</td><td>20609504243</td><td>HUALKANA PERU S.A.C.</td></tr>
+            <tr><td>5</td><td>1445848</td><td>HUAMANCAJA ALARCON, RODRIGO NOE</td><td>59PCBDS601</td><td>20456047212</td><td>DIGITAL BOX PERU S.A.C.</td></tr>
+            <tr><td>6</td><td>1430067</td><td>HUAYANEY MONTOYA, JOSEPH MANUEL JUNIOR</td><td>59PCBDS601</td><td>20536075861</td><td>IVAX TECHNOLOGIES & INFORMATION SYSTEMS S.A.C.</td></tr>
+            <tr><td>7</td><td>1427987</td><td>GARCIA SONEO, JACK MICHAEL</td><td>59PCBDS601</td><td>20127149632</td><td>ENRIQUE CHAMPAC INGENIEROS S.A.C.</td></tr>
+            <tr><td>8</td><td>1419222</td><td>LIZA BAUTISTA, ALEX GABRIEL</td><td>59PCBDS601</td><td>10093214426</td><td>VILCAÑAUPA SALAS RAUL EDILBERTO</td></tr>
+            <tr><td>9</td><td>1458943</td><td>LAURA DE LA CRUZ ALEXIS ALEJANDRO</td><td>59PCBDS601</td><td>10316826704</td><td>LEON OSORIO GROVERT PEDRO</td></tr>
+            <tr><td>10</td><td>1423541</td><td>TOLEDO BERROCAL GUILLERMO JESUS</td><td>59PCBDS601</td><td>20601234115</td><td>GS PERU MG E.I.R.L.</td></tr>
+            <tr><td>11</td><td>1437980</td><td>FLOREANO HUACCHILLO FABRICIO ALEXANDER</td><td>59PCBDS601</td><td>10316826704</td><td>LEON OSORIO GROVERT PEDRO</td></tr>
+            <tr><td>12</td><td>1446091</td><td>YAMAGUCHI AGUILAR YOSHIHIRO HECTOR</td><td>59PCBDS601</td><td>20607814601</td><td>CHIPTEC PERU E.I.R.L.</td></tr>
+            <tr><td>13</td><td>1462929</td><td>HUAMAN CORONADO LUIS FERNANDO</td><td>59PCBDS601</td><td>20602524150</td><td>PERU BUSINESS NETWORK EMPRESA INDIVIDUAL DE RESPONSABILIDAD LIMITADA - PBN E.I.R.L.</td></tr>
+            <tr><td>14</td><td>1436147</td><td>GONZALES CHAVEZ DANIEL ALONSO</td><td>59PCBDS601</td><td>20605131396</td><td>CONFIANZA S.A.C.</td></tr>
+            <tr><td>15</td><td>1443173</td><td>PISCOCHE SALAZAR HARRISON CHARLES</td><td>59PCBDS601</td><td>20545122520</td><td>J & P PERIFERICOS S.A.C.</td></tr>
+            <tr><td>16</td><td>1425258</td><td>CHERO HUANCAS ADRIANO MARTIN</td><td>59PCBDS601</td><td>20545122520</td><td>J & P PERIFERICOS S.A.C.</td></tr>
+            <tr><td>17</td><td>1436615</td><td>MARTINEZ BERNILLA JEEFRY CESAR</td><td>59PCBDS601</td><td>10316826704</td><td>LEON OSORIO GROVERT PEDRO</td></tr>
+        </tbody>
+    </table>
+</div>
+
+
+<div class="table-container" id="tableContainer21">
+    
+    <table id="dataTable21"><h2>BLOQUE 59PDSDS401</h2>
+        <thead>
+            <tr>
+                <th>ITEM</th>
+                <th>ID</th>
+                <th>APELLIDOS Y NOMBRES</th>
+                <th>BLOQUE</th>
+                <th>RUC</th>
+                <th>RAZON SOCIAL</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr><td>1</td><td>1520628</td><td>GUTIERREZ SANGAMA, AARON ANDRÉ</td><td>59PDSDS401</td><td>20545122520</td><td>J & P PERIFERICOS S.A.C.</td></tr>
+            <tr><td>2</td><td>1499869</td><td>NIÑO DE GUZMÁN VELASCO, GELCY MIRELY</td><td>59PDSDS401</td><td>20511653909</td><td>VENATOR SOCIEDAD ANONIMA CERRADA</td></tr>
+            <tr><td>3</td><td>1506228</td><td>QUISPE HILARIO, CARLOS DANIEL</td><td>59PDSDS401</td><td>20545122520</td><td>J & P PERIFERICOS S.A.C.</td></tr>
+            <tr><td>4</td><td>1512328</td><td>YUPANQUI UMPIRI, FABRICIO JOSE</td><td>59PDSDS401</td><td>20545122520</td><td>J & P PERIFERICOS S.A.C.</td></tr>
+            <tr><td>5</td><td>1449594</td><td>ZAMUDIO MIUCCIO, ESTEBAN FELIPE</td><td>59PDSDS401</td><td>20609565412</td><td>VIDDA LABS S.A.C.</td></tr>
+        </tbody>
+    </table>
+</div>
+
+
+<div class="table-container" id="tableContainer22">
+    
+    <table id="dataTable22"><h2>BLOQUE 59PDSDS402</h2>
+        <thead>
+            <tr>
+                <th>ITEM</th>
+                <th>ID</th>
+                <th>APELLIDOS Y NOMBRES</th>
+                <th>BLOQUE</th>
+                <th>RUC</th>
+                <th>RAZON SOCIAL</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr><td>1</td><td>1506339</td><td>ARIAS CAMASCA, OSCAR JEAN MARIO</td><td>59PDSDS402</td><td>20545122520</td><td>J & P PERIFERICOS S.A.C.</td></tr>
+            <tr><td>2</td><td>1537747</td><td>APAZA ALVAREZ, BENJAMIN FERNANDO</td><td>59PDSDS402</td><td>20545122520</td><td>J & P PERIFERICOS S.A.C.</td></tr>
+            <tr><td>3</td><td>1514670</td><td>BAUTISTA CHAVEZ, ALAN ENRIQUE</td><td>59PDSDS402</td><td>10104724553</td><td>PASCUAL TORIBIO ANA YRMA</td></tr>
+            <tr><td>4</td><td>1526441</td><td>CORNEJO ATOCHE, SAMIR ALONSO</td><td>59PDSDS402</td><td>20545122520</td><td>J & P PERIFERICOS S.A.C.</td></tr>
+            <tr><td>5</td><td>1525990</td><td>CONDORI LINGAN, ANTHONY ALESSANDRO</td><td>59PDSDS402</td><td>20545122520</td><td>J & P PERIFERICOS S.A.C.</td></tr>
+            <tr><td>6</td><td>1520428</td><td>TARRILLO SOLIS, GABY YADHIRA</td><td>59PDSDS402</td><td>20545122520</td><td>J & P PERIFERICOS S.A.C.</td></tr>
+            <tr><td>7</td><td>1509733</td><td>HUARANGA COLOMBATTI, ANTONIO ALESSANDRO</td><td>59PDSDS402</td><td>20604696659</td><td>KUNAQ SOLUCIONES GLOBALES S.A.C.</td></tr>
+            <tr><td>8</td><td>1510253</td><td>TINEO ATUNCA, JEAN FRANCO</td><td>59PDSDS402</td><td>20612174424</td><td>TUBERIAS PERUANITO S.A.C.</td></tr>
+            <tr><td>9</td><td>1520420</td><td>URTEAGA SÁNCHEZ, JOAO MIGUEL</td><td>59PDSDS402</td><td>20612174424</td><td>TUBERIAS PERUANITO S.A.C.</td></tr>
+            <tr><td>10</td><td>1520419</td><td>PARCO LAURA, JOB DANIEL</td><td>59PDSDS402</td><td>20545122520</td><td>J & P PERIFERICOS S.A.C.</td></tr>
+            <tr><td>11</td><td>1526433</td><td>AMAYA PARCO, NESSARETH ELIAS UBER</td><td>59PDSDS402</td><td>20545122520</td><td>J & P PERIFERICOS S.A.C.</td></tr>
+            <tr><td>12</td><td>1525993</td><td>MATEOS CCONISLLA, WILLIAM</td><td>59PDSDS402</td><td>20604807931</td><td>NATIVE LAB S.A.C.</td></tr>
+            <tr><td>13</td><td>1520624</td><td>PARICAHUA YARINGAÑO, MOISES</td><td>59PDSDS402</td><td>20604807931</td><td>NATIVE LAB S.A.C.</td></tr>
+            <tr><td>14</td><td>1520627</td><td>BOMBILLA CALDAS, SERGIO RODRIGO</td><td>59PDSDS402</td><td>20604807931</td><td>NATIVE LAB S.A.C.</td></tr>
+            <tr><td>15</td><td>1520114</td><td>PACCO MONROY, ROBINSON</td><td>59PDSDS402</td><td>10097400020</td><td>HUAMAN PANDAL SEGUNDINA ROCIO</td></tr>
+            <tr><td>16</td><td>1520644</td><td>ZAPATA NUÑEZ ANTHONY JESUS</td><td>59PDSDS402</td><td>10410697551</td><td>JULCA BRONCANO WILDER FLORENTINO</td></tr>
+        </tbody>
+    </table>
+</div>
+
+
+<div class="table-container" id="tableContainer23">
+    
+    <table id="dataTable23"><h2>BLOQUE 59PDSDS403</h2>
+        <thead>
+            <tr>
+                <th>ITEM</th>
+                <th>ID</th>
+                <th>APELLIDOS Y NOMBRES</th>
+                <th>BLOQUE</th>
+                <th>RUC</th>
+                <th>RAZON SOCIAL</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr><td>1</td><td>1482313</td><td>BERNAL OROSCO, GIULIANA BRISA</td><td>59PDSDS403</td><td>20550845645</td><td>INGENIERIA DE TELECOMUNICACIONES Y SEGURIDAD ELECTRONICA PERU S.A.C. - INTELSE PERU S.A.C.</td></tr>
+            <tr><td>2</td><td>1530511</td><td>BRUNO RODRIGUEZ, SEBASTIAN NOE</td><td>59PDSDS403</td><td>20301506601</td><td>IE "2026 SIMON BOLIVAR"</td></tr>
+            <tr><td>3</td><td>1545390</td><td>MARCELO MONJE, ADRIAN ANTHONIO</td><td>59PDSDS403</td><td>20536883577</td><td>CONTROL Y AUTOMATIZACION INMOBILIARIA S.A.C.-CONAUTI S.A.C.</td></tr>
+            <tr><td>4</td><td>1540476</td><td>MONDOÑEDO COCHOLA, JOSE AUGUSTO</td><td>59PDSDS403</td><td>20301506601</td><td>IE "2026 SIMON BOLIVAR"</td></tr>
+            <tr><td>5</td><td>1531418</td><td>MORAN CAYETANO, SANTIAGO RAÚL</td><td>59PDSDS403</td><td>10104724553</td><td>PASCUAL TORIBIO ANA YRMA</td></tr>
+        </tbody>
+    </table>
+</div>
+
+
+<div class="table-container" id="tableContainer24">
+    
+    <table id="dataTable24"><h2>BLOQUE 59PDSDS501</h2>
+        <thead>
+            <tr>
+                <th>ITEM</th>
+                <th>ID</th>
+                <th>APELLIDOS Y NOMBRES</th>
+                <th>BLOQUE</th>
+                <th>RUC</th>
+                <th>RAZON SOCIAL</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr><td>1</td><td>1486563</td><td>JIMENEZ OLIVARES, PIERO FERNANDO</td><td>59PDSDS501</td><td>20551007481</td><td>PRINT & FILMS COLOR S.A.C.</td></tr>
+            <tr><td>2</td><td>1482408</td><td>TORIBIO CARMEN, DANTE</td><td>59PDSDS501</td><td>20551007481</td><td>PRINT & FILMS COLOR S.A.C.</td></tr>
+            <tr><td>3</td><td>1473528</td><td>JURADO CÁRDENAS, FABRIZIO ESTHEFANO</td><td>59PDSDS501</td><td>20533661123</td><td>CONSTRUCTORA & MULTISERVICIOS CAQUI E.I.R.L. - C & M CAQUI E.I.R.L.</td></tr>
+            <tr><td>4</td><td>1473526</td><td>SALCEDO ESCOBAR, JOSE ALBERTO</td><td>59PDSDS501</td><td>20605158049</td><td>VAFTEC PERU S.A.C.</td></tr>
+            <tr><td>5</td><td>1479719</td><td>CABRERA VELASQUEZ, ALEXANDRA CONY</td><td>59PDSDS501</td><td>20545122520</td><td>J & P PERIFERICOS S.A.C.</td></tr>
+            <tr><td>6</td><td>1391479</td><td>BRUNO CORDOVA, KELLY RODOIL</td><td>59PDSDS501</td><td>20100653487</td><td>FUNDICION FERROSA SOCIEDAD ANONIMA CERRADA</td></tr>
+            <tr><td>7</td><td>1482416</td><td>ICHPAS ACUÑA, LUIS DAVID</td><td>59PDSDS501</td><td>20513020369</td><td>AREA DE DISEÑO S.A.C.</td></tr>
+            <tr><td>8</td><td>1410881</td><td>FLORES PARIONA, RICHARD ANTONI</td><td>59PDSDS501</td><td>20513020369</td><td>AREA DE DISEÑO S.A.C.</td></tr>
+            <tr><td>9</td><td>1479728</td><td>GONZALES FARFAN, JUAN CESAR</td><td>59PDSDS501</td><td>20513020369</td><td>AREA DE DISEÑO S.A.C.</td></tr>
+            <tr><td>10</td><td>1423451</td><td>ROMERO CHAVEZ, DENIS SANTIGO</td><td>59PDSDS501</td><td>10097400020</td><td>HUAMAN PANDAL SEGUNDINA ROCIO</td></tr>
+        </tbody>
+    </table>
+</div>
+
+
+<div class="table-container" id="tableContainer25">
+    
+    <table id="dataTable25"><h2>BLOQUE 59PDSDS601</h2>
+        <thead>
+            <tr>
+                <th>ITEM</th>
+                <th>ID</th>
+                <th>APELLIDOS Y NOMBRES</th>
+                <th>BLOQUE</th>
+                <th>RUC</th>
+                <th>RAZON SOCIAL</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr><td>1</td><td>1434199</td><td>MELÉNDEZ TAFUR, DANIEL ALEJANDRO</td><td>59PDSDS601</td><td>20100654025</td><td>CORPORACION DE INDUSTRIAS PLASTICAS S A</td></tr>
+            <tr><td>2</td><td>1443216</td><td>LLAMACPONCCA PEÑA, DIEGO ALONSO</td><td>59PDSDS601</td><td>20545122520</td><td>J & P PERIFERICOS S.A.C.</td></tr>
+            <tr><td>3</td><td>1447827</td><td>GUTIERREZ CURIPACO, PABLO DARIO MATIAS</td><td>59PDSDS601</td><td>20547907087</td><td>CORPORACION KALIFFO S.A.C.</td></tr>
+            <tr><td>4</td><td>1449756</td><td>PALOMINO CASTRO, RODRIGO</td><td>59PDSDS601</td><td>20547907087</td><td>CORPORACION KALIFFO S.A.C.</td></tr>
+            <tr><td>5</td><td>1453993</td><td>TORRES BARBOZA, ANTHONY MITSUAKY</td><td>59PDSDS601</td><td>20605443941</td><td>GRUPO VICENTE INVERSIONES E.I.R.L.</td></tr>
+            <tr><td>6</td><td>1421227</td><td>BAYES ENRIQUEZ, EVA MARÍA FLORISA</td><td>59PDSDS601</td><td>20510205961</td><td>SOLUCIONES RACIONALES SAC</td></tr>
+            <tr><td>7</td><td>1453520</td><td>HUAYTA TANTAVILCA, EYDER VICTOR</td><td>59PDSDS601</td><td>20547907087</td><td>CORPORACION KALIFFO S.A.C.</td></tr>
+            <tr><td>8</td><td>1427942</td><td>MONTALVO CABRERA, LUIS ALEXANDER</td><td>59PDSDS601</td><td>20611994380</td><td>NEGYTECH DIGITAL SOLUTIONS S.A.C.</td></tr>
+            <tr><td>9</td><td>1432755</td><td>GONZALEZ CIEZA, OSCAR JEISON</td><td>59PDSDS601</td><td>20563362813</td><td>TECNOVEDADES E.I.R.L.</td></tr>
+            <tr><td>10</td><td>1435821</td><td>OSCO MALDONADO, YAMPOL ALEXIS</td><td>59PDSDS601</td><td>20600824172</td><td>SIMPLIFICA INC S.A.C.</td></tr>
+            <tr><td>11</td><td>1425268</td><td>MARCAS CHAMPI, JHONNATAN JUSTIN</td><td>59PDSDS601</td><td>20606749423</td><td>GROUP J&H MENDOZA E.I.R.L</td></tr>
+            <tr><td>12</td><td>1427511</td><td>YUPANQUI LLAMACURI, DAVID JOSTYN</td><td>59PDSDS601</td><td>20606749423</td><td>GROUP J&H MENDOZA E.I.R.L</td></tr>
+            <tr><td>13</td><td>1435938</td><td>HUARANGA PERALTA, CRISTINA MILAGROS</td><td>59PDSDS601</td><td>20604807931</td><td>NATIVE LAB S.A.C.</td></tr>
+            <tr><td>14</td><td>1458287</td><td>JO TORRES, ANTHONY CARLO</td><td>59PDSDS601</td><td>20138144578</td><td>EMPRESA DE TRANSPORTES NUEVO HORIZONTE SOCIEDAD ANONIMA</td></tr>
+            <tr><td>15</td><td>1457968</td><td>GUERRA GUERRA JOSEPH KIN</td><td>59PDSDS601</td><td>20610037284</td><td>PALOMINO INVESTMENTS E.I.R.L.</td></tr>
+            <tr><td>16</td><td>1458271</td><td>TAQUIRE ESPINOZA JEAN FRANCO</td><td>59PDSDS601</td><td>20610037284</td><td>PALOMINO INVESTMENTS E.I.R.L.</td></tr>
+            <tr><td>17</td><td>1438230</td><td>SAENZ CASTRO ARNY GIUSSEPPE</td><td>59PDSDS601</td><td>20610037284</td><td>PALOMINO INVESTMENTS E.I.R.L.</td></tr>
+        </tbody>
+    </table>
+</div>
+
+
+<div class="table-container" id="tableContainer26">
+    <table id="dataTable26">
+        <h2>BLOQUE 59PDSDS602</h2>
+        <thead>
+            <tr>
+                <th>ITEM</th>
+                <th>ID</th>
+                <th>APELLIDOS Y NOMBRES</th>
+                <th>BLOQUE</th>
+                <th>RUC</th>
+                <th>RAZON SOCIAL</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr><td>1</td><td>1350327</td><td>CRUZ TAMARIZ, ENZO FABIAN</td><td>59PDSDS602</td><td>20546317588</td><td>JC TECNOLOGIA S.A.C.</td></tr>
+        </tbody>
+    </table>
+</div>
+
+<div class="table-container" id="tableContainer27">
+    <table id="dataTable27">
+        <h2>BLOQUE 59PGDTS301</h2>
+        <thead>
+            <tr>
+                <th>ITEM</th>
+                <th>ID</th>
+                <th>APELLIDOS Y NOMBRES</th>
+                <th>BLOQUE</th>
+                <th>RUC</th>
+                <th>RAZON SOCIAL</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr><td>1</td><td>1457167</td><td>CABRERA PEÑA, CYNTHIA DAANA</td><td>59PGDTS301</td><td>20557200020</td><td>INVERSIONES ALDEYSI S.A.C.</td></tr>
+        </tbody>
+    </table>
+</div>
+
+<div class="table-container" id="tableContainer28">
+    <table id="dataTable28">
+        <h2>BLOQUE 59PGDTS401</h2>
+        <thead>
+            <tr>
+                <th>ITEM</th>
+                <th>ID</th>
+                <th>APELLIDOS Y NOMBRES</th>
+                <th>BLOQUE</th>
+                <th>RUC</th>
+                <th>RAZON SOCIAL</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr><td>1</td><td>1539158</td><td>ATANACIO HIDALGO, TANIA MERCEDES</td><td>59PGDTS401</td><td>20609501350</td><td>INMOBI PERU S.A.C.</td></tr>
+            <tr><td>2</td><td>1520480</td><td>BARRAZA YOVERA, BENJAMIN ZAID</td><td>59PGDTS401</td><td>20123487541</td><td>CORPORACION LIFE S.A.C.</td></tr>
+            <tr><td>3</td><td>1392027</td><td>DE LA CRUZ MEZA, JOSELY INES</td><td>59PGDTS401</td><td>20610511121</td><td>ZIGMA DISTB S.A.C.</td></tr>
+            <tr><td>4</td><td>1520630</td><td>ELIAS CASTILLO, JOSE MARTÍN</td><td>59PGDTS401</td><td>20100047056</td><td>TOPY TOP S A</td></tr>
+            <tr><td>5</td><td>1506224</td><td>ESCALANTE HUAMAN, JOSE MARTIN</td><td>59PGDTS401</td><td>20536733419</td><td>EMUSA PERU S.A.C.</td></tr>
+            <tr><td>6</td><td>1526463</td><td>GARCIA CORTEZ, DYLAN AXEL</td><td>59PGDTS401</td><td>10455840029</td><td>VEGA DE LA CRUZ GUIANNINA MARCIA</td></tr>
+            <tr><td>7</td><td>1520118</td><td>GÒMEZ SOTO, CELESTE</td><td>59PGDTS401</td><td>20555728019</td><td>COMUNIARTE S.A.C.</td></tr>
+            <tr><td>8</td><td>1509746</td><td>JIMÉNEZ ROJAS, LUIS BERNARDO</td><td>59PGDTS401</td><td>20610781170</td><td>CREAWORLD PERU S.A.C.</td></tr>
+            <tr><td>9</td><td>1509748</td><td>LOBO SALDAÑA, JHAN ANDONY</td><td>59PGDTS401</td><td>10400413458</td><td>MENDOZA BARBARAN MARITZA</td></tr>
+            <tr><td>10</td><td>1531407</td><td>ORDOÑEZ PEREZ, JHAIR ANTHONY</td><td>59PGDTS401</td><td>20544457846</td><td>APM INVERSIONES E.I.R.L.</td></tr>
+            <tr><td>11</td><td>1528529</td><td>MOGOLLON CCARHUAS, JANELLA STEFANNI</td><td>59PGDTS401</td><td>20555728019</td><td>COMUNIARTE S.A.C.</td></tr>
+            <tr><td>12</td><td>1526458</td><td>MUÑOZ VALLADOLID, CARMEN ALEJANDRA</td><td>59PGDTS401</td><td>10400413458</td><td>MENDOZA BARBARAN MARITZA</td></tr>
+            <tr><td>13</td><td>1528675</td><td>PADILLA PAREDES, ASLHEY ARIANA</td><td>59PGDTS401</td><td>10468276203</td><td>SANTILLAN PAUCCARA JORGE</td></tr>
+            <tr><td>14</td><td>1520391</td><td>QUIROZ COTRINA, MAXIMO BENJAMIN</td><td>59PGDTS401</td><td>10101794381</td><td>ESPINOZA CALLUPE ALEX ERLY</td></tr>
+            <tr><td>15</td><td>1538168</td><td>RIVERA LLONTOP, ADRIÁN NOÉ</td><td>59PGDTS401</td><td>10189009530</td><td>MORALES BRICENO SUSANA MELISSA</td></tr>
+            <tr><td>16</td><td>1528537</td><td>RODRIGUEZ ESPIRITU, XIOMARA</td><td>59PGDTS401</td><td>20610936165</td><td>JHARDSYSTEX S.A.C.</td></tr>
+            <tr><td>17</td><td>1546932</td><td>RODRIGUEZ MENDOZA, ANGELO LEONARDO</td><td>59PGDTS401</td><td>20605443941</td><td>GRUPO VICENTE INVERSIONES E.I.R.L.</td></tr>
+        </tbody>
+    </table>
+</div>
+
+<div class="table-container" id="tableContainer29">
+    <table id="dataTable29">
+        <h2>BLOQUE 59PGDTS402</h2>
+        <thead>
+            <tr>
+                <th>ITEM</th>
+                <th>ID</th>
+                <th>APELLIDOS Y NOMBRES</th>
+                <th>BLOQUE</th>
+                <th>RUC</th>
+                <th>RAZON SOCIAL</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr><td>1</td><td>1446164</td><td>ARMAS ZAMORA, ANJALI ADHONAY</td><td>59PGDTS402</td><td>20612189057</td><td>ALBA PRINT SOLUCIONES GRAFICAS E.I.R.L.</td></tr>
+            <tr><td>2</td><td>1531273</td><td>CARDENAS DE LA CRUZ, JEYSTER EDGAR</td><td>59PGDTS402</td><td>10438265819</td><td>DONAYRE-HART CALLE ANDRES EDGAR</td></tr>
+            <tr><td>3</td><td>1479735</td><td>LUYO CUBA, CESAR NOE</td><td>59PGDTS402</td><td>20536731394</td><td>DCCAPA S.A.C.</td></tr>
+            <tr><td>4</td><td>1531393</td><td>PIZURY ARROYO, BRAULIO ADRIAN</td><td>59PGDTS402</td><td>20610781170</td><td>CREAWORLD PERU S.A.C.</td></tr>
+            <tr><td>5</td><td>1520117</td><td>URRUTIA CORRALES, XIOMARA DANIELA</td><td>59PGDTS402</td><td>20610781170</td><td>CREAWORLD PERU S.A.C.</td></tr>
+            <tr><td>6</td><td>1531411</td><td>FELIX MUÑOZ, FREDY MARCELO</td><td>59PGDTS402</td><td>20610781170</td><td>CREAWORLD PERU S.A.C.</td></tr>
+            <tr><td>7</td><td>1528854</td><td>GUERRERO CRUZ, WALDIR ZENON</td><td>59PGDTS402</td><td>20601209480</td><td>CORPORACION GRAFICA LEON HNOS S.A.C.</td></tr>
+            <tr><td>8</td><td>1542552</td><td>MAMANI NAVARRO, JHORDY SMITH</td><td>59PGDTS402</td><td>20610263471</td><td>REAA PRODUCCIONES E.I.R.L.</td></tr>
+            <tr><td>9</td><td>1539187</td><td>HUAMAN REYES, ALEXANDRA DANIELA</td><td>59PGDTS402</td><td>10406120576</td><td>RAMOS GORDILLO GRISELDA MARISOL</td></tr>
+            <tr><td>10</td><td>1538811</td><td>CORRO VALERIO, MARÍA DE LOS ANGELES</td><td>59PGDTS402</td><td>20603458657</td><td>FC ARTE CREATIVIDAD & DISEÑO S.A.C.</td></tr>
+            <tr><td>11</td><td>1505403</td><td>GELDRES SÁNCHEZ, JHON</td><td>59PGDTS402</td><td>20603515821</td><td>HOME TECHNOLOGYS S.A.C.</td></tr>
+            <tr><td>12</td><td>1520145</td><td>CARRIZALES DE LA TORRE, MILENA ALEXANDRA</td><td>59PGDTS402</td><td>10438265819</td><td>DONAYRE-HART CALLE ANDRES EDGAR</td></tr>
+            <tr><td>13</td><td>1378525</td><td>HURTADO ALFARO, JENNIFER FIORELLA</td><td>59PGDTS402</td><td>10438265819</td><td>DONAYRE-HART CALLE ANDRES EDGAR</td></tr>
+            <tr><td>14</td><td>1509720</td><td>HURTADO PENA, JAHCLEE ALBERT CROSBY</td><td>59PGDTS402</td><td>10104724553</td><td>PASCUAL TORIBIO ANA YRMA</td></tr>
+            <tr><td>15</td><td>1510265</td><td>RIOS GONZALES, DIANA GABRIELA</td><td>59PGDTS402</td><td>20610486674</td><td>ORION SPORT E.I.R.L.</td></tr>
+            <tr><td>16</td><td>1528900</td><td>KARACIC PINTO JAKOV JURE IVAN</td><td>59PGDTS402</td><td>20538118339</td><td>M & M ARTEC S.A.C.</td></tr>
+        </tbody>
+    </table>
+</div>
+
+<div class="table-container" id="tableContainer30">
+    <table id="dataTable30">
+        <h2>BLOQUE 59PGDTS403</h2>
+        <thead>
+            <tr>
+                <th>ITEM</th>
+                <th>ID</th>
+                <th>APELLIDOS Y NOMBRES</th>
+                <th>BLOQUE</th>
+                <th>RUC</th>
+                <th>RAZON SOCIAL</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr><td>1</td><td>1545396</td><td>AYALA CUTIPA, DANA LIZETH</td><td>59PGDTS403</td><td>10454807184</td><td>ANTICONA ARROYO SONIA MARYLIN</td></tr>
+            <tr><td>2</td><td>1499861</td><td>CONSTANTINO PAREDES, ANGELA MARIANA</td><td>59PGDTS403</td><td>20523786211</td><td>INGENIERIA MVD S.A.C.</td></tr>
+            <tr><td>3</td><td>1520479</td><td>CRUZ CAMACHO, NICOLAS RODRIGO</td><td>59PGDTS403</td><td>20492552250</td><td>NEONHOUSELED S.A.C.</td></tr>
+            <tr><td>4</td><td>1328352</td><td>GUTIERREZ BLAS, CRISTHIAN ALEXANDER</td><td>59PGDTS403</td><td>10801410982</td><td>TOLEDO LEANDRO HENRY TOMAS</td></tr>
+            <tr><td>5</td><td>1540517</td><td>HIJAR RUMUALDO, ROGER JEREMY</td><td>59PGDTS403</td><td>20555728019</td><td>COMUNIARTE S.A.C.</td></tr>
+            <tr><td>6</td><td>1520388</td><td>HILARIO ZAPATA, NICHOL ZELENA</td><td>59PGDTS403</td><td>20605433414</td><td>INNOVACION & TECNOLOGIA PLASTICA S.A.C.</td></tr>
+            <tr><td>7</td><td>1500293</td><td>MIGUEL GONZALES, MARCO ANTONIO</td><td>59PGDTS403</td><td>20610263471</td><td>REAA PRODUCCIONES E.I.R.L.</td></tr>
+            <tr><td>8</td><td>1420864</td><td>MONTANO DIAZ, ALEXANDRA</td><td>59PGDTS403</td><td>10425369640</td><td>DIAZ DE LA CRUZ CARMEN</td></tr>
+            <tr><td>9</td><td>1510248</td><td>OROSCO DORIA, YASSIRA GAMILE</td><td>59PGDTS403</td><td>20609501350</td><td>INMOBI PERU S.A.C.</td></tr>
+            <tr><td>10</td><td>1528527</td><td>QUIÑONES FLORES, LUISA GUISELLE SOFIA</td><td>59PGDTS403</td><td>20557200020</td><td>INVERSIONES ALDEYSI S.A.C.</td></tr>
+            <tr><td>11</td><td>1487053</td><td>REYES CARLOS, JOSE ANTONIO EFRAIN</td><td>59PGDTS403</td><td>20537592118</td><td>TOP MARKET PERU S.A.C</td></tr>
+            <tr><td>12</td><td>1442032</td><td>SIFUENTES CABALLERO, SAUL ALEXIS</td><td>59PGDTS403</td><td>20610781170</td><td>CREAWORLD PERU S.A.C.</td></tr>
+            <tr><td>13</td><td>1322276</td><td>SIMEON DOMINGUEZ, CHRISTOPHER BRYAN</td><td>59PGDTS403</td><td>20603515821</td><td>HOME TECHNOLOGYS S.A.C.</td></tr>
+            <tr><td>14</td><td>1545395</td><td>TADEO VILLALTA, DAYANA BELEN</td><td>59PGDTS403</td><td>20610204989</td><td>REPRESENTACIONES AMERICAN BISMARCK S.A.C.</td></tr>
+            <tr><td>15</td><td>1540525</td><td>TTITO VELASQUE, DAYSI CARLA LORENA</td><td>59PGDTS403</td><td>20555728019</td><td>COMUNIARTE S.A.C.</td></tr>
+        </tbody>
+    </table>
+</div>
+
+
+<div class="table-container" id="tableContainer31">
+    <table id="dataTable31">
+        <h2>BLOQUE 59PGDTS404</h2>
+        <thead>
+            <tr>
+                <th>ITEM</th>
+                <th>ID</th>
+                <th>APELLIDOS Y NOMBRES</th>
+                <th>BLOQUE</th>
+                <th>RUC</th>
+                <th>RAZON SOCIAL</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr><td>1</td><td>1433786</td><td>AGUIRRE ZAMUDIO, ANGIE JIMENA</td><td>59PGDTS404</td><td>10416547420</td><td>ZAMUDIO CAMPOS MOISES</td></tr>
+            <tr><td>2</td><td>1545405</td><td>ARRIBASPLATA MORA, PERCY ANTONIO</td><td>59PGDTS404</td><td>20101717098</td><td>TEJIDOS JORGITO S.A.C.</td></tr>
+            <tr><td>3</td><td>1531929</td><td>GUEVARA ZARATE, PIERO ALEXANDRO</td><td>59PGDTS404</td><td>10073255321</td><td>SOTO GONZALES ALBERTO ZENOBIO</td></tr>
+            <tr><td>4</td><td>1346916</td><td>PINARES OSIS, DIEGO</td><td>59PGDTS404</td><td>10106625234</td><td>SATURNO HUACCHO JOSE DAMASO</td></tr>
+        </tbody>
+    </table>
+</div>
+
+
+<div class="table-container" id="tableContainer32">
+    <table id="dataTable32">
+        <h2>BLOQUE 59PGDTS501</h2>
+        <thead>
+            <tr>
+                <th>ITEM</th>
+                <th>ID</th>
+                <th>APELLIDOS Y NOMBRES</th>
+                <th>BLOQUE</th>
+                <th>RUC</th>
+                <th>RAZON SOCIAL</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr><td>1</td><td>1479747</td><td>VALLEJOS HUAMAN, JOSE ANTONIO</td><td>59PGDTS501</td><td>10441830543</td><td>VICENTE SANTOS ROLANDO MAX</td></tr>
+            <tr><td>2</td><td>1419891</td><td>VILA VILA, DANA ALANIS</td><td>59PGDTS501</td><td>20608204084</td><td>RYBIU E.I.R.L.</td></tr>
+            <tr><td>3</td><td>1443791</td><td>TORREJON GAVINO, AXEL FRANK</td><td>59PGDTS501</td><td>20608204084</td><td>RYBIU E.I.R.L.</td></tr>
+            <tr><td>4</td><td>1475379</td><td>ROBLES MILLA, NATALIA GIANELLA</td><td>59PGDTS501</td><td>20608204084</td><td>RYBIU E.I.R.L.</td></tr>
+            <tr><td>5</td><td>1435832</td><td>FERNALD FERREYROS, SOLANGE DEL CARMEN</td><td>59PGDTS501</td><td>20608204084</td><td>RYBIU E.I.R.L.</td></tr>
+            <tr><td>6</td><td>1439332</td><td>SUAREZ CHICOMA, JHERSON JHOEL</td><td>59PGDTS501</td><td>20538530566</td><td>MACRIFH S.A.C.</td></tr>
+            <tr><td>7</td><td>1274809</td><td>REYNA JARA, RENATO FERNANDO</td><td>59PGDTS501</td><td>20609122405</td><td>ANEMEB S.A.C.</td></tr>
+            <tr><td>8</td><td>1475387</td><td>CONDORI CARI, JACKELIN JESSICA</td><td>59PGDTS501</td><td>20600566491</td><td>ELECTRONIC SOLUTION S.A.C.</td></tr>
+            <tr><td>9</td><td>1454549</td><td>FLORES RODRIGUEZ, LUCY RAQUEL ROMMY</td><td>59PGDTS501</td><td>20544557395</td><td>INVERSIONES GENERALES RGR E.I.R.L</td></tr>
+            <tr><td>10</td><td>1426560</td><td>HUAMAN SALAZAR, LUIS ANGEL</td><td>59PGDTS501</td><td>20602948219</td><td>DISTRIBUCIONES DB&JK S.A.C.</td></tr>
+            <tr><td>11</td><td>1487756</td><td>CANDIOTE MORALES, WILLIAN JORGE</td><td>59PGDTS501</td><td>20513020369</td><td>AREA DE DISEÑO S.A.C.</td></tr>
+            <tr><td>12</td><td>1480042</td><td>ATENCIO HUATARUNCO, ALEXANDER MARCOS</td><td>59PGDTS501</td><td>20513020369</td><td>AREA DE DISEÑO S.A.C.</td></tr>
+            <tr><td>13</td><td>1336674</td><td>DAVILA CROSBY, EDUARDO SILVERIO</td><td>59PGDTS501</td><td>20550495211</td><td>EMOTION COMUNICACION INTEGRAL S.A.C.</td></tr>
+            <tr><td>14</td><td>1486573</td><td>RONDON SOLANO, EDDIE MIGUEL</td><td>59PGDTS501</td><td>10438265819</td><td>DONAYRE-HART CALLE ANDRES EDGAR</td></tr>
+            <tr><td>15</td><td>1488112</td><td>VALDEZ ROJAS, SEBASTIAN WILLIAM</td><td>59PGDTS501</td><td>20513020369</td><td>AREA DE DISEÑO S.A.C.</td></tr>
+        </tbody>
+    </table>
+</div>
+
+
+<div class="table-container" id="tableContainer33">
+    <table id="dataTable33">
+        <h2>BLOQUE 59PGDTS502</h2>
+        <thead>
+            <tr>
+                <th>ITEM</th>
+                <th>ID</th>
+                <th>APELLIDOS Y NOMBRES</th>
+                <th>BLOQUE</th>
+                <th>RUC</th>
+                <th>RAZON SOCIAL</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr><td>1</td><td>1420280</td><td>ALVARADO CORREA, ALEXIS DAVID</td><td>59PGDTS502</td><td>20609501350</td><td>INMOBI PERU S.A.C.</td></tr>
+            <tr><td>2</td><td>1473463</td><td>AYALA PITTMAN, ERICK ADRIAN</td><td>59PGDTS502</td><td>20466595200</td><td>Y.D.COMPUTER E.I.R.L.</td></tr>
+            <tr><td>3</td><td>1486580</td><td>CASANI BEJARANO, PAULO SERGIO</td><td>59PGDTS502</td><td>10441830543</td><td>VICENTE SANTOS ROLANDO MAX</td></tr>
+            <tr><td>4</td><td>1473558</td><td>CALDERON QUISPE, GESELA AROLY</td><td>59PGDTS502</td><td>10445321732</td><td>TRELLES RUBINA JANETH JENIFER</td></tr>
+            <tr><td>5</td><td>1473559</td><td>CHACON COBIAN, YANALI MELISA</td><td>59PGDTS502</td><td>20423925028</td><td>MODAS DIVERSAS DEL PERU SAC</td></tr>
+            <tr><td>6</td><td>1479736</td><td>CUNO CALERO, CLAUDIA</td><td>59PGDTS502</td><td>20553161470</td><td>AXIS GRAPHIC SERVICE E.I.R.L.</td></tr>
+            <tr><td>7</td><td>1423547</td><td>DÍAZ PEÑA, ROSA FIORELLA</td><td>59PGDTS502</td><td>20513020369</td><td>AREA DE DISEÑO S.A.C.</td></tr>
+            <tr><td>8</td><td>1360204</td><td>MENDIETA GRILLO, MAYRA ALEJANDRA</td><td>59PGDTS502</td><td>20601907560</td><td>GRUPO INSE S.A.C.</td></tr>
+            <tr><td>9</td><td>1482413</td><td>OCHOA DIAZ, LARITZAD JAZMIN</td><td>59PGDTS502</td><td>20537127385</td><td>RAYOS PELUQUERIA E.I.R.L.</td></tr>
+            <tr><td>10</td><td>1474719</td><td>PACHERRE AVALOS, SANTIAGO VALENTIN</td><td>59PGDTS502</td><td>20523926081</td><td>AVACH IMPRESIONES S.A.C.</td></tr>
+            <tr><td>11</td><td>1479737</td><td>VÁSCONES HUARANCA, CLAUDIO EDUARDO</td><td>59PGDTS502</td><td>20611752009</td><td>GRUPO GRAFICA CLICK E.I.R.L.</td></tr>
+            <tr><td>12</td><td>1473563</td><td>VILCA QUISPE, JHOBERSON JESSIEL</td><td>59PGDTS502</td><td>10200800937</td><td>OLANO PALOMINO CHARITO SILVIA</td></tr>
+            <tr><td>13</td><td>1479743</td><td>YSLA TONCCOCHE, JEREMY</td><td>59PGDTS502</td><td>20551440282</td><td>ABC MINERA Y METALMECANICA S.A.C.</td></tr>
+        </tbody>
+    </table>
+</div>
+
+
+<div class="table-container" id="tableContainer34">
+    <table id="dataTable34">
+        <h2>BLOQUE 59PGDTS503</h2>
+        <thead>
+            <tr>
+                <th>ITEM</th>
+                <th>ID</th>
+                <th>APELLIDOS Y NOMBRES</th>
+                <th>BLOQUE</th>
+                <th>RUC</th>
+                <th>RAZON SOCIAL</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr><td>1</td><td>1349480</td><td>PATROCINIO DONAYRE, JUAN DIEGO</td><td>59PGDTS503</td><td>20510636784</td><td>INVERSIONES MEGAVISION SOCIEDAD ANONIMA CERRADA</td></tr>
+            <tr><td>2</td><td>1438233</td><td>SALAS MENDEZ, MEYDELY SALET</td><td>59PGDTS503</td><td>20513020369</td><td>AREA DE DISEÑO S.A.C.</td></tr>
+            <tr><td>3</td><td>1343230</td><td>LAVALLE MATOS, SELENE MILAGROS</td><td>59PGDTS503</td><td>20611258861</td><td>CEDIFYC E.I.R.L.</td></tr>
+            <tr><td>4</td><td>1458508</td><td>OLIVARES ROSPIGLIOSI, GLEIDY YESSENIA</td><td>59PGDTS503</td><td>20557769626</td><td>M & S PIMA COTTON S.A.C.</td></tr>
+            <tr><td>5</td><td>1212630</td><td>MALDONADO CORDOVA, STEPHANY IRENE</td><td>59PGDTS503</td><td>20513020369</td><td>AREA DE DISEÑO S.A.C.</td></tr>
+            <tr><td>6</td><td>1343086</td><td>AGUIRRE MENDOZA, JOAQUIN SEBASTIAN FLAVIO</td><td>59PGDTS503</td><td>20554776397</td><td>LIBRA'S DESIGN & CONSTRUCTION S.A.C. - LIBRA'S S.A.C.</td></tr>
+        </tbody>
+    </table>
+</div>
+
+
+<div class="table-container" id="tableContainer35">
+    <table id="dataTable35">
+        <h2>BLOQUE 59PGDTS601</h2>
+        <thead>
+            <tr>
+                <th>ITEM</th>
+                <th>ID</th>
+                <th>APELLIDOS Y NOMBRES</th>
+                <th>BLOQUE</th>
+                <th>RUC</th>
+                <th>RAZON SOCIAL</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr><td>1</td><td>1447858</td><td>ARAUJO VELASQUEZ, KAEL MAURICIO</td><td>59PGDTS601</td><td>20601790336</td><td>TEAM OF MARKETING PLANNING AND INNOVATION S.A.C.</td></tr>
+            <tr><td>2</td><td>1446200</td><td>BEJARANO CHACPE, FRANCO ADRIAN</td><td>59PGDTS601</td><td>20518434790</td><td>VICHS PUBLICIDAD EIRL</td></tr>
+            <tr><td>3</td><td>1450445</td><td>COLLADO ALATA, LU ANA ALMENDRA</td><td>59PGDTS601</td><td>20546855644</td><td>PAD ESTUDIO DIGITAL SAC</td></tr>
+            <tr><td>4</td><td>1421202</td><td>DOMINGUEZ RIVERA, ARIATNA ISABEL</td><td>59PGDTS601</td><td>20600317611</td><td>PRODUCTORA CAMPOS & ACUÑA S.A.C.</td></tr>
+            <tr><td>5</td><td>1432777</td><td>CASTRO BERNA, ROSARIO DEL PILAR</td><td>59PGDTS601</td><td>10099221874</td><td>MALCA GONZALEZ SANDRA LINA</td></tr>
+            <tr><td>6</td><td>1449705</td><td>GUERRERO MORALES, SERGIO ADRIANO</td><td>59PGDTS601</td><td>20605443941</td><td>GRUPO VICENTE INVERSIONES E.I.R.L.</td></tr>
+            <tr><td>7</td><td>1433935</td><td>MONTENEGRO QUIÑONES, SOFÍA VICTORIA</td><td>59PGDTS601</td><td>20610781170</td><td>CREAWORLD PERU S.A.C.</td></tr>
+            <tr><td>8</td><td>1137283</td><td>MORI BAUTISTA, JUAN MANUEL</td><td>59PGDTS601</td><td>20518434790</td><td>VICHS PUBLICIDAD EIRL</td></tr>
+            <tr><td>9</td><td>1421215</td><td>MURGA MARTINEZ, ADRIAN RICARDO</td><td>59PGDTS601</td><td>20601790336</td><td>TEAM OF MARKETING PLANNING AND INNOVATION S.A.C.</td></tr>
+            <tr><td>10</td><td>1434912</td><td>MAGUIÑA BRAVO, MADELEINE JAKELINE</td><td>59PGDTS601</td><td>20605443941</td><td>GRUPO VICENTE INVERSIONES E.I.R.L.</td></tr>
+            <tr><td>11</td><td>1460594</td><td>OCHOA LINO, ANAHI GUADALUPE</td><td>59PGDTS601</td><td>20611077760</td><td>PRODUCMEDIC E.I.R.L.</td></tr>
+            <tr><td>12</td><td>1449708</td><td>ORELLANA LEON, YULY GIOMARA</td><td>59PGDTS601</td><td>20609046059</td><td>INVERSIONES PLASTYPET PERU S.A.C.S.</td></tr>
+            <tr><td>13</td><td>1192034</td><td>PACAHUALA RAMIREZ, JAIME JESUS</td><td>59PGDTS601</td><td>20610781170</td><td>CREAWORLD PERU S.A.C.</td></tr>
+            <tr><td>14</td><td>1216423</td><td>NORES HUALLPACUNA, SEBASTIAN ALEJANDRO</td><td>59PGDTS601</td><td>20605443941</td><td>GRUPO VICENTE INVERSIONES E.I.R.L.</td></tr>
+            <tr><td>15</td><td>1457548</td><td>RODRIGUEZ REYNA, PATRICIA LUZ ROCIO</td><td>59PGDTS601</td><td>20610781170</td><td>CREAWORLD PERU S.A.C.</td></tr>
+            <tr><td>16</td><td>1438774</td><td>TINTAYO SUAREZ, MIRELLA ISABEL</td><td>59PGDTS601</td><td>10454807184</td><td>ANTICONA ARROYO SONIA MARYLIN</td></tr>
+            <tr><td>17</td><td>1428009</td><td>TORRES CASAS, ALEJANDRO</td><td>59PGDTS601</td><td>20610781170</td><td>CREAWORLD PERU S.A.C.</td></tr>
+        </tbody>
+    </table>
+</div>
+
+<div class="table-container" id="tableContainer36">
+    <table id="dataTable36">
+        <h2>BLOQUE 59PGDTS602</h2>
+        <thead>
+            <tr>
+                <th>ITEM</th>
+                <th>ID</th>
+                <th>APELLIDOS Y NOMBRES</th>
+                <th>BLOQUE</th>
+                <th>RUC</th>
+                <th>RAZON SOCIAL</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr><td>1</td><td>1343274</td><td>VALENCIA SOTELO, MARIA ISABEL</td><td>59PGDTS602</td><td>20600425804</td><td>GRUPO KILLAMAR E.I.R.L.</td></tr>
+            <tr><td>2</td><td>1343173</td><td>CAMPOS MIRANDA, YASMIN YANIRA</td><td>59PGDTS602</td><td>10479087135</td><td>CARLOS TIQUILLAHUANCA DIANA CAROLINA</td></tr>
+            <tr><td>3</td><td>1343215</td><td>CUYA CARRERA, DANIEL FERNANDO</td><td>59PGDTS602</td><td>20137845661</td><td>PRIMERA IGLESIA EVANGELICA BAUTISTA DE LIMA P.I.E.B.L.</td></tr>
+            <tr><td>4</td><td>1343255</td><td>POMA GRANADOS, SUSANA</td><td>59PGDTS602</td><td>20608321480</td><td>VALIANT STUDIO S.A.C.</td></tr>
+            <tr><td>5</td><td>1343166</td><td>BALLASCO LIVIAS, BRIGUITTE DIANA</td><td>59PGDTS602</td><td>10448864389</td><td>CONTRERAS COLQUI LUISA MERCEDES</td></tr>
+            <tr><td>6</td><td>1343239</td><td> PAREDES RAMON, DULCE LUCERO</td><td>59PGDTS602</td><td>20610781170</td><td>CREAWORLD PERU S.A.C.</td></tr>
+            <tr><td>7</td><td>1343175</td><td>CANCHO TAQUIRE, BRITANHY LISSETH</td><td>59PGDTS602</td><td>20565836880</td><td>GARVI HERMANOS PUBLICIDAD INTEGRAL S.A.C.</td></tr>
+            <tr><td>8</td><td>1343169</td><td>CABRERA LIMA, JAGO JIM</td><td>59PGDTS602</td><td>20609194074</td><td>IMPRENTA Y PUBLICIDAD CHUYGRAF E.I.R.L.</td></tr>
+            <tr><td>9</td><td>1343263</td><td>ROJAS TENAUD, GUIDO VALENTINO</td><td>59PGDTS602</td><td>20137845661</td><td>PRIMERA IGLESIA EVANGELICA BAUTISTA DE LIMA P.I.E.B.L.</td></tr>
+            <tr><td>10</td><td>1343275</td><td>VELASQUEZ FABIAN, SEM JEDIDIAS</td><td>59PGDTS602</td><td>20137845661</td><td>PRIMERA IGLESIA EVANGELICA BAUTISTA DE LIMA P.I.E.B.L.</td></tr>
+            <tr><td>11</td><td>1343210</td><td>COBEÑAS YUMBATO, ZABEYDA XIOMARA</td><td>59PGDTS602</td><td>10438265819</td><td>DONAYRE-HART CALLE ANDRES EDGAR</td></tr>
+            <tr><td>12</td><td>1343269</td><td>ROJAS VARGAS, ELOGY INES</td><td>59PGDTS602</td><td>20538081583</td><td>POLICOLORPLUS E.I.R.L</td></tr>
+            <tr><td>13</td><td>1343236</td><td>MITAC ACOSTA, HANS PIERO</td><td>59PGDTS602</td><td>20565836880</td><td>GARVI HERMANOS PUBLICIDAD INTEGRAL S.A.C.</td></tr>
+            <tr><td>14</td><td>1343233</td><td>MEZA TRUCIOS, JHOANA MILAGROS</td><td>59PGDTS602</td><td>20556347931</td><td>CENTRO DE SEGURIDAD INFORMATICA INTERNATIONAL SERVICES S.A.C.</td></tr>
+            <tr><td>15</td><td>1343261</td><td>RIVAS O'HARA, SANDY CIELO</td><td>59PGDTS602</td><td>20556764531</td><td>TC & C JBR SERVICIOS GENERALES E.I.R.L.</td></tr>
+            <tr><td>16</td><td>1343163</td><td>ARISTA AGUILAR, SERGIO HILDEBRANDO</td><td>59PGDTS602</td><td>20609429322</td><td>CIPER MARKETING DIGITAL E.I.R.L.</td></tr>
+            <tr><td>17</td><td>1343192</td><td>CIFUENTES VILCA, ENRIQUE DRAGOLEON</td><td>59PGDTS602</td><td>20610301607</td><td>D´LPM E.I.R.L.</td></tr>
+            <tr><td>18</td><td>1343231</td><td>MARTINEZ SANCHEZ, MELANIE GISELE</td><td>59PGDTS602</td><td>20515886576</td><td>ELECTRINDUSTRIAS S.A.C.</td></tr>
+        </tbody>
+    </table>
+</div>
+
+<div class="table-container" id="tableContainer37">
+    <table id="dataTable37">
+        <h2>BLOQUE 59PGDTS603</h2>
+        <thead>
+            <tr>
+                <th>ITEM</th>
+                <th>ID</th>
+                <th>APELLIDOS Y NOMBRES</th>
+                <th>BLOQUE</th>
+                <th>RUC</th>
+                <th>RAZON SOCIAL</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr><td>1</td><td>1432308</td><td>ANGLAS HERNANDEZ, PEDRO LUIS TEOFILO</td><td>59PGDTS603</td><td>20601159971</td><td>TECHMIN INGENIEROS SOCIEDAD ANONIMA CERRADA -TECHMIN INGENIEROS S.A.C.</td></tr>
+            <tr><td>2</td><td>1423531</td><td>CÉSPEDES COSQUILLO, SELENA VICTORIA</td><td>59PGDTS603</td><td>20610781170</td><td>CREAWORLD PERU S.A.C.</td></tr>
+            <tr><td>3</td><td>1457970</td><td>FLORES DIAZ, FERNANDO RAUL</td><td>59PGDTS603</td><td>20604509492</td><td>INSTITUTO CIENTIFICO SOSTENIBLE MINERO S.A.C.</td></tr>
+            <tr><td>4</td><td>1438188</td><td>FLORES LIÑAN, LEONEL RICARDO</td><td>59PGDTS603</td><td>20610781170</td><td>CREAWORLD PERU S.A.C.</td></tr>
+            <tr><td>5</td><td>1447396</td><td>FLORES PELÁEZ, LALESHKA AYELEN</td><td>59PGDTS603</td><td>20606059028</td><td>CORPORACION ECOGRAFICA S.A.C.</td></tr>
+            <tr><td>6</td><td>1450454</td><td>ESPADIN ZEGARRA, MARICARMEN MARCELA</td><td>59PGDTS603</td><td>20605443941</td><td>GRUPO VICENTE INVERSIONES E.I.R.L.</td></tr>
+            <tr><td>7</td><td>1442012</td><td>LUQUE LAYZA, MARIA ISABEL</td><td>59PGDTS603</td><td>20600297211</td><td>CORPORACION & INVERSIONES NAPOLY S.A.C.</td></tr>
+            <tr><td>8</td><td>1457530</td><td>MIÑAN BANCES, DANIELA IVONNE LUCÍA</td><td>59PGDTS603</td><td>20602140891</td><td>SAVI GROUP S.A.C.</td></tr>
+            <tr><td>9</td><td>1437985</td><td>PINCHI INUMA, ELIANA REBECA</td><td>59PGDTS603</td><td>20602539173</td><td>GRAFICOS WARI E.I.R.L.</td></tr>
+            <tr><td>10</td><td>1447829</td><td>POMACAJA QUISPE, LORENA ANGIE</td><td>59PGDTS603</td><td>20608204084</td><td>RYBIU E.I.R.L.</td></tr>
+            <tr><td>11</td><td>1438231</td><td>PRADO LAGUNA, GUADALUPE ALEJANDRA</td><td>59PGDTS603</td><td>10316826704</td><td>LEON OSORIO GROVERT PEDRO</td></tr>
+            <tr><td>12</td><td>1463745</td><td>RICALDI MEZA, DAYANA BRIDNEY</td><td>59PGDTS603</td><td>20537420252</td><td>GRUPO COMPINA S.A.C.</td></tr>
+            <tr><td>13</td><td>1419714</td><td>ROCA RAMIREZ, SOL CAMILA</td><td>59PGDTS603</td><td>20513020369</td><td>AREA DE DISEÑO S.A.C.</td></tr>
+            <tr><td>14</td><td>1425108</td><td>SULCA GALLARDO, JOSEPH SEBASTIAN</td><td>59PGDTS603</td><td>20606504331</td><td>PIXELARTE EMPAQUES S.A.C.</td></tr>
+            <tr><td>15</td><td>1429062</td><td>SULCA GONZALES, PATRICIA ROSSY</td><td>59PGDTS603</td><td>20609661390</td><td>EDITORIAL BOOKMASTER E.I.R.L.</td></tr>
+            <tr><td>16</td><td>1427933</td><td>TAYPE QUISPE, REBECA MARIANA</td><td>59PGDTS603</td><td>20518434790</td><td>VICHS PUBLICIDAD EIRL</td></tr>
+            <tr><td>17</td><td>1462926</td><td>TUNQUI CABRERA, JOSE ABRAHAM</td><td>59PGDTS603</td><td>20604509492</td><td>INSTITUTO CIENTIFICO SOSTENIBLE MINERO S.A.C.</td></tr>
+        </tbody>
+    </table>
+</div>
+
+<div class="table-container" id="tableContainer38">
+    <table id="dataTable38">
+        <h2>BLOQUE 59PGDTS604</h2>
+        <thead>
+            <tr>
+                <th>ITEM</th>
+                <th>ID</th>
+                <th>APELLIDOS Y NOMBRES</th>
+                <th>BLOQUE</th>
+                <th>RUC</th>
+                <th>RAZON SOCIAL</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr><td>1</td><td>1425256</td><td>AYALA OCHOA, DANIELA ROSA MARÍA</td><td>59PGDTS604</td><td>20610035800</td><td>GROUP FAJAS QUALITY MODA S.A.C.</td></tr>
+            <tr><td>2</td><td>1433933</td><td>QUISPE CABRERA, LUIS ALONSO</td><td>59PGDTS604</td><td>10420620981</td><td>LOPEZ MAURICIO JAIME PERCY</td></tr>
+            <tr><td>3</td><td>1417282</td><td>VILLANUEVA PUMA, NATHALY CRISS</td><td>59PGDTS604</td><td>20601234115</td><td>GS PERU MG E.I.R.L.</td></tr>
+            <tr><td>4</td><td>1421178</td><td>ALARCON GUTIERREZ, JACK RENZO</td><td>59PGDTS604</td><td>20610781170</td><td>CREAWORLD PERU S.A.C.</td></tr>
+            <tr><td>5</td><td>1405104</td><td>WONG CABALLERO, ENZO LEONARDO</td><td>59PGDTS604</td><td>20606626887</td><td>INMOBILIARIA GRUPO VISION 12 EIRL</td></tr>
+            <tr><td>6</td><td>1450963</td><td>PANTA REA, MIGUEL ANGEL</td><td>59PGDTS604</td><td>10482484323</td><td>CARHUACUSMA CCOLQUE MIGUEL ANGEL</td></tr>
+            <tr><td>7</td><td>1435321</td><td>VERASTEGUI CAMPOVERDE, YERALDIN ESTEFANI</td><td>59PGDTS604</td><td>20522531872</td><td>CARGO WORLD PERU S.A.C.</td></tr>
+            <tr><td>8</td><td>1423424</td><td>SORIANO FLORES, JUAN DAVID</td><td>59PGDTS604</td><td>20611271752</td><td>GRUPO CECATECIS S.A.C.</td></tr>
+            <tr><td>9</td><td>1451182</td><td>MASIAS CHALLCO, MARIA JOSE</td><td>59PGDTS604</td><td>10085512990</td><td>ESPINOZA RAMOS OSCAR GABRIEL</td></tr>
+            <tr><td>10</td><td>1420438</td><td>BRAVO QUISPE, PERCY SALVADOR</td><td>59PGDTS604</td><td>20556011606</td><td>E-VISUAL E.I.R.L.</td></tr>
+            <tr><td>11</td><td>1453900</td><td>SALAZAR REJAS, XIOMARA BRIGITT</td><td>59PGDTS604</td><td>20607095711</td><td>GRUPO GN S.A.C.</td></tr>
+            <tr><td>12</td><td>1451179</td><td>QUISPE SAMANIEGO, NAYDELIN MERCY</td><td>59PGDTS604</td><td>10062153500</td><td>CONCEPCION TAICAS VICTORIO EUGENIO</td></tr>
+            <tr><td>13</td><td>1434313</td><td>SILVESTRE ROSALES, ARACELI</td><td>59PGDTS604</td><td>10414102404</td><td>FLORES CARBAJAL ELIZABETH</td></tr>
+            <tr><td>14</td><td>1370732</td><td>BERNUY TINOCO, DIEGO ADRIAN</td><td>59PGDTS604</td><td>20607095711</td><td>GRUPO GN S.A.C.</td></tr>
+            <tr><td>15</td><td>1438768</td><td>RIOS CABEL, KEYSI ABIGAIL</td><td>59PGDTS604</td><td>20612281948</td><td>DIGITAL CREATIVE MKT E.I.R.L.</td></tr>
+            <tr><td>16</td><td>1120810</td><td>GUZMAN CHAVARRIA, MIRIAM MILAGROS</td><td>59PGDTS604</td><td>20613012584</td><td>AUTO & TRUCKS CORPORATION E.I.R.L.</td></tr>
+        </tbody>
+    </table>
+</div>
+
+
+<div class="table-container" id="tableContainer39">
+    <table id="dataTable39">
+        <h2>BLOQUE 59PGDTS605</h2>
+        <thead>
+            <tr>
+                <th>ITEM</th>
+                <th>ID</th>
+                <th>APELLIDOS Y NOMBRES</th>
+                <th>BLOQUE</th>
+                <th>RUC</th>
+                <th>RAZON SOCIAL</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr><td>1</td><td>1312828</td><td>DE LA CRUZ AUCCASI, HÉCTOR ALEXANDER</td><td>59PGDTS605</td><td>20609040301</td><td>IMPORTACIÓN Y SERVICIOS ARTIPEL E.I.R.L.</td></tr>
+            <tr><td>2</td><td>1429290</td><td>FLORES RIVEROS, ERICK ANDERSON</td><td>59PGDTS605</td><td>20514432768</td><td>ROMA IMPORT&EXPORT INTERNAZIONALE S.A.C.</td></tr>
+            <tr><td>3</td><td>870907</td><td>HUALLANCA PILLACA, NESTOR AMADOR</td><td>59PGDTS605</td><td>20550166233</td><td>HEMETEL S.A.C.</td></tr>
+            <tr><td>4</td><td>1256877</td><td>PUCHURI CATAÑO, DIEGO JOSE</td><td>59PGDTS605</td><td>20606187981</td><td>DROGUERIA PHARMALEV E.I.R.L.</td></tr>
+            <tr><td>5</td><td>1421228</td><td>RAMIREZ RAMIREZ, ZAMIRA YAMELY</td><td>59PGDTS605</td><td>20605443941</td><td>GRUPO VICENTE INVERSIONES E.I.R.L.</td></tr>
+            <tr><td>6</td><td>1442199</td><td>SANTIAGO ESCALANTE, CESAR DANIEL</td><td>59PGDTS605</td><td>10700511257</td><td>LOZANO MEDINA CECILIA</td></tr>
+            <tr><td>7</td><td>1449771</td><td>TATAJE QUIROZ, ANGELINE THAIS</td><td>59PGDTS605</td><td>20605443941</td><td>GRUPO VICENTE INVERSIONES E.I.R.L.</td></tr>
+            <tr><td>8</td><td>1423470</td><td>ROJAS CABALLERO, WILMER ISMAEL</td><td>59PGDTS605</td><td>20609517892</td><td>BIDEL S.A.C.</td></tr>
+        </tbody>
+    </table>
+</div>
+
+<div class="table-container" id="tableContainer40">
+    <table id="dataTable40">
+        <h2>BLOQUE 59PGDTS606</h2>
+        <thead>
+            <tr>
+                <th>ITEM</th>
+                <th>ID</th>
+                <th>APELLIDOS Y NOMBRES</th>
+                <th>BLOQUE</th>
+                <th>RUC</th>
+                <th>RAZON SOCIAL</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr><td>1</td><td>1343065</td><td>BAZALAR ESCUDERO, LEYLA KRISSEL</td><td>59PGDTS606</td><td>20610781170</td><td>CREAWORLD PERU S.A.C.</td></tr>
+            <tr><td>2</td><td>1343222</td><td>DOMINGUEZ HERMITAÑO, KARINA</td><td>59PGDTS606</td><td>20392852230</td><td>FERRETERIA INDUSTRIAL FRANK S.A.C.</td></tr>
+            <tr><td>3</td><td>1343105</td><td>ESPINOZA HUERTA, MARÍA MERCEDES</td><td>59PGDTS606</td><td>20610781170</td><td>CREAWORLD PERU S.A.C.</td></tr>
+            <tr><td>4</td><td>1343112</td><td>HUALLPA CENTENO, JACQUELINE BETSAIDA</td><td>59PGDTS606</td><td>20610781170</td><td>CREAWORLD PERU S.A.C.</td></tr>
+            <tr><td>5</td><td>1343174</td><td>LAURA ROJAS, LISETH SOLEDAD</td><td>59PGDTS606</td><td>20608321480</td><td>VALIANT STUDIO S.A.C.</td></tr>
+            <tr><td>6</td><td>1343176</td><td>MUNASCA CCANA, JEMINA JUDHIT</td><td>59PGDTS606</td><td>20610781170</td><td>CREAWORLD PERU S.A.C.</td></tr>
+            <tr><td>7</td><td>1343179</td><td>PEÑA VILLALTA, ANDERSON</td><td>59PGDTS606</td><td>20608920049</td><td>CORPORACION DIAS BUENOS S.A.C.</td></tr>
+            <tr><td>8</td><td>1343171</td><td>QUINTANILLA CHOQUECAHUA, XIOMARA LIZETH</td><td>59PGDTS606</td><td>10431366288</td><td>JALLIME CHAVEZ JOSE LUIS</td></tr>
+            <tr><td>9</td><td>1343067</td><td>ROJAS PILCO, NAYELY</td><td>59PGDTS606</td><td>20603500459</td><td>QBI STUDIO S.A.C.</td></tr>
+            <tr><td>10</td><td>1343229</td><td>TORRES LAZARO, KAROL MARIFE</td><td>59PGDTS606</td><td>10420481727</td><td>RAMOS NICOLL LUIS ESTEBAN</td></tr>
+        </tbody>
+    </table>
+</div>
+
+
+<div class="table-container" id="tableContainer41">
+    <table id="dataTable41">
+        <h2>BLOQUE 59PIADS401</h2>
+        <thead>
+            <tr>
+                <th>ITEM</th>
+                <th>ID</th>
+                <th>APELLIDOS Y NOMBRES</th>
+                <th>BLOQUE</th>
+                <th>RUC</th>
+                <th>RAZON SOCIAL</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr><td>1</td><td>1386913</td><td>ALDAY VERA, ELBER ABEL</td><td>59PIADS401</td><td>20604696659</td><td>KUNAQ SOLUCIONES GLOBALES S.A.C.</td></tr>
+            <tr><td>2</td><td>1531933</td><td>BARRERA RUIZ, MIGUEL ANGEL</td><td>59PIADS401</td><td>20545122520</td><td>J & P PERIFERICOS S.A.C.</td></tr>
+            <tr><td>3</td><td>1510257</td><td>CALDERON ARIAS, ADRIANO ALEXANDER</td><td>59PIADS401</td><td>20545122520</td><td>J & P PERIFERICOS S.A.C.</td></tr>
+            <tr><td>4</td><td>1508218</td><td>GIRALDO FLOREZ, DIEGO ALEXANDER</td><td>59PIADS401</td><td>20550845645</td><td>INGENIERIA DE TELECOMUNICACIONES Y SEGURIDAD ELECTRONICA PERU S.A.C. - INTELSE PERU S.A.C.</td></tr>
+            <tr><td>5</td><td>1540492</td><td>HUIZA HERRERA, LEONARDO</td><td>59PIADS401</td><td>20600825438</td><td>GUNJOP EMPRESA INDIVIDUAL DE RESPONSABILIDAD LIMITADA - GUNJOP E.I.R.L.</td></tr>
+            <tr><td>6</td><td>1510259</td><td>SERON VARGAS, JEANPIER FARID</td><td>59PIADS401</td><td>20545122520</td><td>J & P PERIFERICOS S.A.C.</td></tr>
+            <tr><td>7</td><td>1520438</td><td>TORRES JULCA, ERLYN MIGUEL</td><td>59PIADS401</td><td>20545122520</td><td>J & P PERIFERICOS S.A.C.</td></tr>
+        </tbody>
+    </table>
+</div>
+
+<div class="table-container" id="tableContainer42">
+    <table id="dataTable42">
+        <h2>BLOQUE 59PIADS402</h2>
+        <thead>
+            <tr>
+                <th>ITEM</th>
+                <th>ID</th>
+                <th>APELLIDOS Y NOMBRES</th>
+                <th>BLOQUE</th>
+                <th>RUC</th>
+                <th>RAZON SOCIAL</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr><td>1</td><td>1527376</td><td>CARHUALLANQUI ANTUNEZ, MANUEL</td><td>59PIADS402</td><td>20509242462</td><td>OPCIONSCAN EIRL</td></tr>
+            <tr><td>2</td><td>443947</td><td>GUZMAN MACEDO, EDGAR EDUARDO</td><td>59PIADS402</td><td>20601585724</td><td>GESTION DE PROYECTOS INFORMATICOS Y SISTEMAS S.A.C.</td></tr>
+            <tr><td>3</td><td>1473539</td><td>LUPACA CHOQUECALLATA, JOSUE RODRIGO</td><td>59PIADS402</td><td>20601585724</td><td>GESTION DE PROYECTOS INFORMATICOS Y SISTEMAS S.A.C.</td></tr>
+            <tr><td>4</td><td>1509717</td><td>MAGNO SOLSOL, CARLOS ADRIAN VERSLUYS</td><td>59PIADS402</td><td>20601585724</td><td>GESTION DE PROYECTOS INFORMATICOS Y SISTEMAS S.A.C.</td></tr>
+            <tr><td>5</td><td>1528541</td><td>GOICOCHEA RUIZ, STEFANNY NICOLL</td><td>59PIADS402</td><td>20607095711</td><td>GRUPO GN S.A.C.</td></tr>
+            <tr><td>6</td><td>1520442</td><td>CARHUAPOMA PABLO, HAYDE XIMENA</td><td>59PIADS402</td><td>20607095711</td><td>GRUPO GN S.A.C.</td></tr>
+            <tr><td>7</td><td>1520481</td><td>CHANCAN LABAJOS, JERREMI ARON</td><td>59PIADS402</td><td>20545122520</td><td>J & P PERIFERICOS S.A.C.</td></tr>
+            <tr><td>8</td><td>1520486</td><td>VILCHEZ RAMOS, ANDRES ALESSANDRO</td><td>59PIADS402</td><td>20545122520</td><td>J & P PERIFERICOS S.A.C.</td></tr>
+            <tr><td>9</td><td>1512353</td><td>ZAVALETA VILLAFANI, HUGO SANTIAGO</td><td>59PIADS402</td><td>20606749423</td><td>GROUP J&H MENDOZA E.I.R.L</td></tr>
+            <tr><td>10</td><td>1538641</td><td>VENTOCILLA GARRIAZO, ROSALVINA</td><td>59PIADS402</td><td>20606749423</td><td>GROUP J&H MENDOZA E.I.R.L</td></tr>
+            <tr><td>11</td><td>1479762</td><td>QUISPE VALENTIN, JOSE ANTONIO FERMIN</td><td>59PIADS402</td><td>20609674742</td><td>HCV GLOBALTIC SOLUTIONS S.A.C.</td></tr>
+            <tr><td>12</td><td>1512346</td><td>BRAGA CHOQUEHUANCA, ANGEL ARTURO</td><td>59PIADS402</td><td>10403896034</td><td>MARTINEZ QUISPE FRANKLIN</td></tr>
+            <tr><td>13</td><td>1527359</td><td>RAMIREZ CHAVEZ, RICHARD ABRAHAM</td><td>59PIADS402</td><td>10403896034</td><td>MARTINEZ QUISPE FRANKLIN</td></tr>
+            <tr><td>14</td><td>1512186</td><td>VARGAS TUMIALAN ADRIANA</td><td>59PIADS402</td><td>20600626397</td><td>FC CONTADORES Y ASOCIADOS S.A.C.</td></tr>
+        </tbody>
+    </table>
+</div>
+
+<div class="table-container" id="tableContainer43">
+    <table id="dataTable43">
+        <h2>BLOQUE 59PIADS403</h2>
+        <thead>
+            <tr>
+                <th>ITEM</th>
+                <th>ID</th>
+                <th>APELLIDOS Y NOMBRES</th>
+                <th>BLOQUE</th>
+                <th>RUC</th>
+                <th>RAZON SOCIAL</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr><td>1</td><td>1382373</td><td>VILLAR GOMEZ, GARDENIA MILUSKA</td><td>59PIADS403</td><td>20416382493</td><td>TECNICENTRO SAN BORJA S.R.L.</td></tr>
+            <tr><td>2</td><td>1548244</td><td>GAMBOA MUSAJA, MIGUEL ALEXANDER</td><td>59PIADS403</td><td>20536883577</td><td>CONTROL Y AUTOMATIZACION INMOBILIARIA S.A.C.-CONAUTI S.A.C.</td></tr>
+            <tr><td>3</td><td>1546935</td><td>FIGUEROA ROSAS, PAMELA ESTEFANI</td><td>59PIADS403</td><td>20607095711</td><td>GRUPO GN S.A.C.</td></tr>
+            <tr><td>4</td><td>1537675</td><td>VILLAYZAN SALAZAR, MILAGROS SHEYLA</td><td>59PIADS403</td><td>20607095711</td><td>GRUPO GN S.A.C.</td></tr>
+            <tr><td>5</td><td>1539364</td><td>ROBLES TURPO, FLOR DE MARIA</td><td>59PIADS403</td><td>20610936165</td><td>JHARDSYSTEX S.A.C.</td></tr>
+            <tr><td>6</td><td>1537673</td><td>YAÑEZ CRUZ, RAUL ENRIQUE</td><td>59PIADS403</td><td>20301506601</td><td>IE "2026 SIMON BOLIVAR"</td></tr>
+            <tr><td>7</td><td>1545523</td><td>RAMOS FLORES, JAIRO DANIEL</td><td>59PIADS403</td><td>20301506601</td><td>IE "2026 SIMON BOLIVAR"</td></tr>
+            <tr><td>8</td><td>1510258</td><td>RIVAS HERMITAÑO, SEYDA SADITH</td><td>59PIADS403</td><td>20607095711</td><td>GRUPO GN S.A.C.</td></tr>
+            <tr><td>9</td><td>1443083</td><td>CARLOS MANRIQUE OMAR ALEXIS</td><td>59PIADS403</td><td>10410697551</td><td>JULCA BRONCANO WILDER FLORENTINO</td></tr>
+            <tr><td>10</td><td>1399699</td><td>QUISPE TORRES ANDRO PAOLO</td><td>59PIADS403</td><td>10410697551</td><td>JULCA BRONCANO WILDER FLORENTINO</td></tr>
+            <tr><td>11</td><td>1540514</td><td>SEJEKAM MASHIAN MICHAEL JACKSON</td><td>59PIADS403</td><td>10410697551</td><td>JULCA BRONCANO WILDER FLORENTINO</td></tr>
+            <tr><td>12</td><td>1499840</td><td>CHEGNE CHUQUE BENAIA</td><td>59PIADS403</td><td>20604150079</td><td>CORPORACION INNOVA STUDIO E.I.R.L.</td></tr>
+        </tbody>
+    </table>
+</div>
+
+<div class="table-container" id="tableContainer44">
+    <table id="dataTable44">
+        <h2>BLOQUE 59PIADS501</h2>
+        <thead>
+            <tr>
+                <th>ITEM</th>
+                <th>ID</th>
+                <th>APELLIDOS Y NOMBRES</th>
+                <th>BLOQUE</th>
+                <th>RUC</th>
+                <th>RAZON SOCIAL</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr><td>1</td><td>1410889</td><td>GUERRERO QUINTANILLA, JOHAN GONZALO</td><td>59PIADS501</td><td>20545122520</td><td>J & P PERIFERICOS S.A.C.</td></tr>
+            <tr><td>2</td><td>1473540</td><td>CALLE ORTIZ, XANDER JHEFRAIN</td><td>59PIADS501</td><td>20549480269</td><td>RENE REEDUCACION NEUROMOTORA S.A.C.</td></tr>
+            <tr><td>3</td><td>1475413</td><td>VARGAS CUTIMBO, JHONATAN RAUL</td><td>59PIADS501</td><td>20601665051</td><td>TECHNOLOGY VIEW PERU E.I.R.L.</td></tr>
+            <tr><td>4</td><td>1479764</td><td>CORAS MARQUEZ, FABIAN GIANCARLO</td><td>59PIADS501</td><td>20549480269</td><td>RENE REEDUCACION NEUROMOTORA S.A.C.</td></tr>
+            <tr><td>5</td><td>1480459</td><td>HUERTAS CHANCOS, SEBASTIAN</td><td>59PIADS501</td><td>20549480269</td><td>RENE REEDUCACION NEUROMOTORA S.A.C.</td></tr>
+            <tr><td>6</td><td>1473543</td><td>INCA CHARA, JOSÉ ALBERTO</td><td>59PIADS501</td><td>10316826704</td><td>LEON OSORIO GROVERT PEDRO</td></tr>
+            <tr><td>7</td><td>1474710</td><td>ESCALANTE CABALLA, ANDERSON JAVIER</td><td>59PIADS501</td><td>20610115897</td><td>RUNWAY 7 FASHION E.I.R.L.</td></tr>
+            <tr><td>8</td><td>1482392</td><td>MARTINEZ RAMOS, YOGER</td><td>59PIADS501</td><td>10316826704</td><td>LEON OSORIO GROVERT PEDRO</td></tr>
+            <tr><td>9</td><td>1473542</td><td>FLORES SÁNCHEZ, KATHERINE JESSICA</td><td>59PIADS501</td><td>20601310695</td><td>SERVICIOS DE ARCHIVOS FISICOS Y DIGITALES S.A.C.</td></tr>
+            <tr><td>10</td><td>1473544</td><td>MURGUEYTIO CASIMIRO, PEDRO ALEJANDRO</td><td>59PIADS501</td><td>20601310695</td><td>SERVICIOS DE ARCHIVOS FISICOS Y DIGITALES S.A.C.</td></tr>
+            <tr><td>11</td><td>1421222</td><td>LUIS DE LA CRUZ, JOSE MARIA</td><td>59PIADS501</td><td>20545122520</td><td>J & P PERIFERICOS S.A.C.</td></tr>
+            <tr><td>12</td><td>1491081</td><td>REVILLA ALBARRAN GIANLUCA EMANUEL</td><td>59PIADS501</td><td>10410697551</td><td>JULCA BRONCANO WILDER FLORENTINO</td></tr>
+        </tbody>
+    </table>
+</div>
+
+<div class="table-container" id="tableContainer45">
+    <table id="dataTable45">
+        <h2>BLOQUE 59PIADS502</h2>
+        <thead>
+            <tr>
+                <th>ITEM</th>
+                <th>ID</th>
+                <th>APELLIDOS Y NOMBRES</th>
+                <th>BLOQUE</th>
+                <th>RUC</th>
+                <th>RAZON SOCIAL</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr><td>1</td><td>1474683</td><td>CARHUACHINCHAY JIMENEZ, SUSANA</td><td>59PIADS502</td><td>20605443941</td><td>GRUPO VICENTE INVERSIONES E.I.R.L.</td></tr>
+            <tr><td>2</td><td>1474162</td><td>LURITA LLICAN, AARON ALEJANDRO</td><td>59PIADS502</td><td>20547035381</td><td>INNOVACION Y OPERACIONES LOGISTICAS SOCIEDAD ANONIMA</td></tr>
+            <tr><td>3</td><td>1446882</td><td>SALAS RAMIREZ, ANDRÉ ANTONIO</td><td>59PIADS502</td><td>20600109716</td><td>INVERSIONES SOMER E.I.R.L.</td></tr>
+            <tr><td>4</td><td>1349412</td><td>ALIAGA ECHEGARAY MARCOS EDUARDO</td><td>59PIADS502</td><td>20340301201</td><td>JADAR S.R.L.</td></tr>
+        </tbody>
+    </table>
+</div>
+
+<div class="table-container" id="tableContainer46">
+    <table id="dataTable46">
+        <h2>BLOQUE 59PIADS601</h2>
+        <thead>
+            <tr>
+                <th>ITEM</th>
+                <th>ID</th>
+                <th>APELLIDOS Y NOMBRES</th>
+                <th>BLOQUE</th>
+                <th>RUC</th>
+                <th>RAZON SOCIAL</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr><td>1</td><td>1422790</td><td>CARDENAS SR RAYME, JUAN DIEGO</td><td>59PIADS601</td><td>20169004359</td><td>UNIVERSIDAD NACIONAL DE INGENIERIA UNI</td></tr>
+            <tr><td>2</td><td>1436132</td><td>CERVANTES MENDOZA, FABRICIO DAVID</td><td>59PIADS601</td><td>20471744493</td><td>CALIZA CEMENTO INCA S.A.</td></tr>
+            <tr><td>3</td><td>1428210</td><td>CHECYA MAURI, PAUL ENRIQUE</td><td>59PIADS601</td><td>20169004359</td><td>UNIVERSIDAD NACIONAL DE INGENIERIA UNI</td></tr>
+            <tr><td>4</td><td>1432094</td><td>COMUN UNOCC, RAUL EMANUEL</td><td>59PIADS601</td><td>20504927611</td><td>CENTRO OPTICO DAVID S.A.C.</td></tr>
+            <tr><td>5</td><td>1431015</td><td>CRUZ ROJAS, JHEREMY JESUS</td><td>59PIADS601</td><td>20605380698</td><td>INVERSIONES DAYEMIR E.I.R.L.</td></tr>
+            <tr><td>6</td><td>1447830</td><td>CAMPOS MEZA, YERLY RONALD</td><td>59PIADS601</td><td>20600769341</td><td>BEST SYTEL S.A.C.</td></tr>
+            <tr><td>7</td><td>1425279</td><td>ESPINOZA LÓPEZ, VÍCTOR JOEL JUNIOR</td><td>59PIADS601</td><td>20603943733</td><td>DJ DISEÑOS Y SOLUCIONES S.A.C.</td></tr>
+            <tr><td>8</td><td>1430303</td><td>GIRON JACOBI, ANGELO ALEXANDER</td><td>59PIADS601</td><td>20605443941</td><td>GRUPO VICENTE INVERSIONES E.I.R.L.</td></tr>
+            <tr><td>9</td><td>1446203</td><td>GUZMAN CARRANZA, EDUIS RODRIGO</td><td>59PIADS601</td><td>20451796641</td><td>TRES MEDIA E.I.R.L</td></tr>
+            <tr><td>10</td><td>1439329</td><td>INQUILLA VARGAS, LUIS EDUARDO</td><td>59PIADS601</td><td>20451796641</td><td>TRES MEDIA E.I.R.L</td></tr>
+            <tr><td>11</td><td>1427059</td><td>ORIZANO VILLAR, MAYELI</td><td>59PIADS601</td><td>20600769341</td><td>BEST SYTEL S.A.C.</td></tr>
+            <tr><td>12</td><td>1434980</td><td>SOLORZANO CAJAHUANCA, FERNANDO JOSE</td><td>59PIADS601</td><td>20517616771</td><td>DATA INTERNATIONAL SERVICES S.R.L.</td></tr>
+            <tr><td>13</td><td>1445014</td><td>VELARDE MALLQUI, DIEGO RODRIGO</td><td>59PIADS601</td><td>20100028698</td><td>FERREYROS SOCIEDAD ANÓNIMA</td></tr>
+            <tr><td>14</td><td>1422499</td><td>VILA ARIZAPANA, JEAN PIER KEVIN</td><td>59PIADS601</td><td>20545122520</td><td>J & P PERIFERICOS S.A.C.</td></tr>
+            <tr><td>15</td><td>1436962</td><td>WINCHEZ RIVERA, MAX ALEJANDRO</td><td>59PIADS601</td><td>20545122520</td><td>J & P PERIFERICOS S.A.C.</td></tr>
+            <tr><td>16</td><td>1459386</td><td>VERGARA AROCUTIPA, JORGE LUIS JHOAN</td><td>59PIADS601</td><td>20600769341</td><td>BEST SYTEL S.A.C.</td></tr>
+        </tbody>
+    </table>
+</div>
+
+<div class="table-container" id="tableContainer47">
+    <table id="dataTable47">
+        <h2>BLOQUE 59PIADS602</h2>
+        <thead>
+            <tr>
+                <th>ITEM</th>
+                <th>ID</th>
+                <th>APELLIDOS Y NOMBRES</th>
+                <th>BLOQUE</th>
+                <th>RUC</th>
+                <th>RAZON SOCIAL</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr><td>1</td><td>1412803</td><td>GARCIA MORY, FERNANDO JAVIER</td><td>59PIADS602</td><td>20603209452</td><td>ACINOX S.M S.A.C.</td></tr>
+            <tr><td>2</td><td>1389154</td><td>SIHUA JIMÉNEZ, FRANCISCO JOAQUÍN</td><td>59PIADS602</td><td>20609031116</td><td>INVERSIONES HITCH E.I.R.L.</td></tr>
+            <tr><td>3</td><td>1385101</td><td>VEGA QUISPE, JORGE ALEXIS</td><td>59PIADS602</td><td>20608388223</td><td>FIBERBLU PERU S.A.C.</td></tr>
+        </tbody>
+    </table>
+</div>
+
+<div class="table-container" id="tableContainer48">
+    <table id="dataTable48">
+        <h2>BLOQUE 59PMSDS401</h2>
+        <thead>
+            <tr>
+                <th>ITEM</th>
+                <th>ID</th>
+                <th>APELLIDOS Y NOMBRES</th>
+                <th>BLOQUE</th>
+                <th>RUC</th>
+                <th>RAZON SOCIAL</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr><td>1</td><td>1512334</td><td>ARIAS KORAHUA, JEFFERSON SEBASTIAN</td><td>59PMSDS401</td><td>20609996715</td><td>SHARD AEGIS E.I.R.L</td></tr>
+            <tr><td>2</td><td>1538648</td><td>GONZALES CORTEZ, AARON KENETH</td><td>59PMSDS401</td><td>20610936165</td><td>JHARDSYSTEX S.A.C.</td></tr>
+            <tr><td>3</td><td>1537758</td><td>SANCHEZ RAMOS, JUAN MIGUEL ANGEL</td><td>59PMSDS401</td><td>20610936165</td><td>JHARDSYSTEX S.A.C.</td></tr>
+            <tr><td>4</td><td>1537749</td><td>VILCHEZ CHICLLA, JUAN CARLOS</td><td>59PMSDS401</td><td>20610936165</td><td>JHARDSYSTEX S.A.C.</td></tr>
+            <tr><td>5</td><td>1538642</td><td>ASTO TOTOS, CARLOS SEBASTIAN</td><td>59PMSDS401</td><td>20610936165</td><td>JHARDSYSTEX S.A.C.</td></tr>
+            <tr><td>6</td><td>1531289</td><td>FERNANDEZ SACRAVILCA, JOSE ALBERTO</td><td>59PMSDS401</td><td>20545122520</td><td>J & P PERIFERICOS S.A.C.</td></tr>
+            <tr><td>7</td><td>1547551</td><td>LIGAS MENDOZA, LEONARDO WALTHER</td><td>59PMSDS401</td><td>20605439064</td><td>EXPERTO PC & SERVICIOS GENERALES S.A.C.</td></tr>
+            <tr><td>8</td><td>1539747</td><td>DAMAZO MENACHO, VICTOR GIAN PAUL</td><td>59PMSDS401</td><td>10468301259</td><td>CARRILLO LEVANO HANS CHRISTIAN</td></tr>
+            <tr><td>9</td><td>1520417</td><td>CAMPOS CHUPILLON, JOSE ALEXANDER</td><td>59PMSDS401</td><td>20603515821</td><td>HOME TECHNOLOGYS S.A.C.</td></tr>
+            <tr><td>10</td><td>1509712</td><td>SORIANO SULCA, ALVARO ANDRE</td><td>59PMSDS401</td><td>20508161418</td><td>CORPORACION LATINOAMERICANA DE SERVICIOS TECNOLOGICOS S.A.C.</td></tr>
+            <tr><td>11</td><td>1510269</td><td>GUZMÁN PAJUELO, FREDDY ALDAIR</td><td>59PMSDS401</td><td>10211358543</td><td>HUAMAN CRUZ JUAN FISHER</td></tr>
+            <tr><td>12</td><td>1548248</td><td>MATOS MONGRUT, PABLO JESÚS</td><td>59PMSDS401</td><td>20601066450</td><td>INVERSIONES CIMATEC E.I.R.L.</td></tr>
+            <tr><td>13</td><td>1539739</td><td>RODRIGUEZ ZEVALLOS, JUAN JOSE</td><td>59PMSDS401</td><td>20610936165</td><td>JHARDSYSTEX S.A.C.</td></tr>
+            <tr><td>14</td><td>1531328</td><td>PADILLA SALAZAR, ERICK GIANCARLO</td><td>59PMSDS401</td><td>20523761065</td><td>HIGH PERFORMANCE SOLUTION S.A.C.</td></tr>
+            <tr><td>15</td><td>1539748</td><td>ESTEBAN CASAÑO, JHAIR</td><td>59PMSDS401</td><td>20609996715</td><td>SHARD AEGIS E.I.R.L</td></tr>
+            <tr><td>16</td><td>1437566</td><td>LEON CANELOS, PIERRE ALEXANDER</td><td>59PMSDS401</td><td>13. Ingrese el</td><td>DATALAB COMPUTER E.I.R.L.</td></tr>
+            <tr><td>17</td><td>1509718</td><td>MEZA CACHA, JHANMER ANDREY</td><td>59PMSDS401</td><td>20478005793</td><td>COMPUDOCTOR S.A.</td></tr>
+            <tr><td>18</td><td>1520461</td><td>JULCA PAUCAR, DANILO GIOVANNI</td><td>59PMSDS401</td><td>20538492028</td><td>INDUBASA S.A.C.</td></tr>
+            <tr><td>19</td><td>1520120</td><td>CARDENAS SUCA, ROGER</td><td>59PMSDS401</td><td>20608019937</td><td>RGA WINPREX CIA S.A.C.</td></tr>
+        </tbody>
+    </table>
+</div>
+
+
+<div class="table-container" id="tableContainer49">
+    <table id="dataTable49">
+        <h2>BLOQUE 59PMSDS402</h2>
+        <thead>
+            <tr>
+                <th>ITEM</th>
+                <th>ID</th>
+                <th>APELLIDOS Y NOMBRES</th>
+                <th>BLOQUE</th>
+                <th>RUC</th>
+                <th>RAZON SOCIAL</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr><td>1</td><td>1531339</td><td>CACHA MEZA, SANDRO</td><td>59PMSDS402</td><td>20610936165</td><td>JHARDSYSTEX S.A.C.</td></tr>
+            <tr><td>2</td><td>1247717</td><td>CASTILLO VICENTE, GERARDO MANUEL ALEJANDRO</td><td>59PMSDS402</td><td>10438995639</td><td>VALDEZ HUAQUI SOCRATES EDDINSON</td></tr>
+            <tr><td>3</td><td>1410564</td><td>CHAVEZ QUISPE, PETER</td><td>59PMSDS402</td><td>20557193147</td><td>REBALLING AMERICA E.I.R.L</td></tr>
+            <tr><td>4</td><td>1454914</td><td>GONZALES PAREDES, DANIEL JULIO</td><td>59PMSDS402</td><td>20554608508</td><td>GRUPO A & R CONSULTING S.A.C.</td></tr>
+            <tr><td>5</td><td>1399232</td><td>GUZMAN HUAMANÑAHUI, GIANPIERE EUGENIO</td><td>59PMSDS402</td><td>10098323886</td><td>CHIPANA CHUQUIMAJO PEDRO</td></tr>
+            <tr><td>6</td><td>1546951</td><td>JUSTO ANDRES, JOHARY MIZAEL</td><td>59PMSDS402</td><td>20604293996</td><td>COMPUTERS WORKSHOP PERU S.A.C.</td></tr>
+            <tr><td>7</td><td>1546966</td><td>LUGO DAVILA, AXEL DAVID</td><td>59PMSDS402</td><td>20609503999</td><td>IT TECHNOLOGY PERU S.A.C.</td></tr>
+            <tr><td>8</td><td>1472413</td><td>PÉREZ QUISPE, PAUL ANDERSON</td><td>59PMSDS402</td><td>10483963853</td><td>HUAMAN OSCCO ERICA MILAGROS</td></tr>
+            <tr><td>9</td><td>1527924</td><td>RAMIREZ CAMACHO, GIANFRANCO ANTONIO</td><td>59PMSDS402</td><td>20610936165</td><td>JHARDSYSTEX S.A.C.</td></tr>
+            <tr><td>10</td><td>1520449</td><td>RAMON OCHOA, EITHAN MARK</td><td>59PMSDS402</td><td>20552181531</td><td>UPKSUPPORT E.I.R.L.</td></tr>
+            <tr><td>11</td><td>1520643</td><td>RODRÍGUEZ PEÑA, JOSÉ LUIS FERNANDO</td><td>59PMSDS402</td><td>20604388458</td><td>CENTRO COMPUTO CORPORACION S.A.C.</td></tr>
+            <tr><td>12</td><td>1527928</td><td>YANCAN RIVERA, BENJAMIN ALEJANDRO</td><td>59PMSDS402</td><td>20610936165</td><td>JHARDSYSTEX S.A.C.</td></tr>
+            <tr><td>13</td><td>1531312</td><td>ZAGACETA JORGE, ESTEFANO CARLOS</td><td>59PMSDS402</td><td>20603515821</td><td>HOME TECHNOLOGYS S.A.C.</td></tr>
+        </tbody>
+    </table>
+</div>
+
+<div class="table-container" id="tableContainer50">
+    <table id="dataTable50">
+        <h2>BLOQUE 59PMSDS403</h2>
+        <thead>
+            <tr>
+                <th>ITEM</th>
+                <th>ID</th>
+                <th>APELLIDOS Y NOMBRES</th>
+                <th>BLOQUE</th>
+                <th>RUC</th>
+                <th>RAZON SOCIAL</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr><td>1</td><td>1527951</td><td>CANO DE LA CRUZ, PATRICIO ELÍ</td><td>59PMSDS403</td><td>20545122520</td><td>J & P PERIFERICOS S.A.C.</td></tr>
+            <tr><td>2</td><td>1512351</td><td>LACUTA FLORES, MARTIN CLAUDIO</td><td>59PMSDS403</td><td>20601907063</td><td>CYBERGAMES (C.G.S.) E.I.R.L.</td></tr>
+            <tr><td>3</td><td>1479944</td><td>CARDENAS PEÑA, LUIS GRIMALDO</td><td>59PMSDS403</td><td>20537979896</td><td>GRUPO MULTI SERVICIOS E.I.R.L.</td></tr>
+            <tr><td>4</td><td>1482412</td><td>ORTEGA RAMOS, JESUS GABRIEL</td><td>59PMSDS403</td><td>20607581917</td><td>LA BRUJA STORE S.R.L.</td></tr>
+            <tr><td>5</td><td>1504128</td><td>SALAS RODRIGUEZ, JHAREN STEPHANO</td><td>59PMSDS403</td><td>20519406951</td><td>MI TECNICO PC SAC</td></tr>
+            <tr><td>6</td><td>1362888</td><td>LUDEÑA HUARCAYA CRISTOFER ALEXANDER</td><td>59PMSDS403</td><td>10099057918</td><td>GAMARRA GARCIA GLADYS ELIZABETH</td></tr>
+            <tr><td>7</td><td>1520422</td><td>CÁRDENAS BERROCAL DIEGO ALEJANDRO</td><td>59PMSDS403</td><td>20603515821</td><td>HOME TECHNOLOGYS S.A.C.</td></tr>
+        </tbody>
+    </table>
+</div>
+
+<div class="table-container" id="tableContainer51">
+    <table id="dataTable51">
+        <h2>BLOQUE 59PMSDS501</h2>
+        <thead>
+            <tr>
+                <th>ITEM</th>
+                <th>ID</th>
+                <th>APELLIDOS Y NOMBRES</th>
+                <th>BLOQUE</th>
+                <th>RUC</th>
+                <th>RAZON SOCIAL</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr><td>1</td><td>1378456</td><td>ALATA LLOCCLLA, LUIS KEVIN</td><td>59PMSDS501</td><td>10722829871</td><td>JIMENEZ ARCENTALES SANTIAGO</td></tr>
+            <tr><td>2</td><td>1480040</td><td>ARIAS OSPINA, WILDER JAIME</td><td>59PMSDS501</td><td>10480726371</td><td>TURRIN OTAZU WILFREDO JEANPIERRE</td></tr>
+            <tr><td>3</td><td>1432085</td><td>MANRRIQUE CURI, FRANK ELISON</td><td>59PMSDS501</td><td>20607739341</td><td>ECOLOGYSYMS E.I.R.L.</td></tr>
+            <tr><td>4</td><td>1425303</td><td>MONTES ESQUIVEL, RONALD EMERSON</td><td>59PMSDS501</td><td>10407435384</td><td>QUINTANA VALERO PETER RICHARD</td></tr>
+            <tr><td>5</td><td>1238054</td><td>REYES VASQUEZ, MARTIN JESUS</td><td>59PMSDS501</td><td>20603742312</td><td>SERVERNET TECHNOLOGY E.I.R.L.</td></tr>
+            <tr><td>6</td><td>1459841</td><td>SOSA GASPAR, BRYAN ANDRÉ</td><td>59PMSDS501</td><td>20607839663</td><td>SF SHALOM COMPUTER E.I.R.L.</td></tr>
+            <tr><td>7</td><td>1398974</td><td>TALLEDO GUZMÁN, MATTHIAS JOAQUIN</td><td>59PMSDS501</td><td>20521235005</td><td>GRUPO CYBERHOUSE SOCIEDAD ANONIMA CERRADA</td></tr>
+            <tr><td>8</td><td>1430236</td><td>TORRES MANUCCI, ESTHEPANO ALFREDO</td><td>59PMSDS501</td><td>10463740360</td><td>AMAU QUISPE MIGUEL ANGEL</td></tr>
+            <tr><td>9</td><td>1474139</td><td>ZARATE GARIBAY, JAMES NICOLAS</td><td>59PMSDS501</td><td>10096833798</td><td>SARMIENTO FUENTES JORGE LUIS</td></tr>
+        </tbody>
+    </table>
+</div>
+
+<div class="table-container" id="tableContainer52">
+    <table id="dataTable52">
+        <h2>BLOQUE 59PMSDS502</h2>
+        <thead>
+            <tr>
+                <th>ITEM</th>
+                <th>ID</th>
+                <th>APELLIDOS Y NOMBRES</th>
+                <th>BLOQUE</th>
+                <th>RUC</th>
+                <th>RAZON SOCIAL</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr><td>1</td><td>1473551</td><td>MEJIA TABACO, MARCO ANTONIO</td><td>59PMSDS502</td><td>20537979896</td><td>GRUPO MULTI SERVICIOS E.I.R.L.</td></tr>
+            <tr><td>2</td><td>1423463</td><td>RIVAS CHAVEZ, JUAN KARLOZ JHONNY</td><td>59PMSDS502</td><td>20609684462</td><td>IMPORTACIONES CYBERCAT S.A.C.</td></tr>
+            <tr><td>3</td><td>1473552</td><td>CHAVEZ LEYVA, LUIS MIGUEL</td><td>59PMSDS502</td><td>20605394044</td><td>MACRO PORTATIL S.A.C.</td></tr>
+            <tr><td>4</td><td>1454414</td><td>CHEEL SEGURA, PAULO SERGIO</td><td>59PMSDS502</td><td>20538118339</td><td>M & M ARTEC S.A.C.</td></tr>
+            <tr><td>5</td><td>1473550</td><td>CHAMPI SIERRA, YESSENIA NAOMI</td><td>59PMSDS502</td><td>20609684462</td><td>IMPORTACIONES CYBERCAT S.A.C.</td></tr>
+            <tr><td>6</td><td>1427749</td><td>AYQUIPA DELGADO, JUAN DIEGO</td><td>59PMSDS502</td><td>20609684462</td><td>IMPORTACIONES CYBERCAT S.A.C.</td></tr>
+            <tr><td>7</td><td>1276388</td><td>AGUIRRE GALICIO, JHUNIOR JHONATAN</td><td>59PMSDS502</td><td>20557193147</td><td>REBALLING AMERICA E.I.R.L</td></tr>
+            <tr><td>8</td><td>1479916</td><td>POZO CISNEROS, WILLIAM ALFREDO</td><td>59PMSDS502</td><td>20610307788</td><td>TECNOLOGIA LATINOAMERICA S.A.C.</td></tr>
+            <tr><td>9</td><td>1478410</td><td>VARGAS RIOS, NORA SOLEDAD</td><td>59PMSDS502</td><td>20605585001</td><td>D Y J FRENOS Y EMBRAGUES S.A.C.</td></tr>
+            <tr><td>10</td><td>1483043</td><td>BALTAZAR LOAYZA, RUBEN FELIX</td><td>59PMSDS502</td><td>20557193147</td><td>REBALLING AMERICA E.I.R.L</td></tr>
+            <tr><td>11</td><td>1435804</td><td>DONAYRE MARTINEZ BRUCE STEVEN</td><td>59PMSDS502</td><td>10736323627</td><td>ZAMORA CHUQUINO CAROLINA SARAI</td></tr>
+            <tr><td>12</td><td>1449637</td><td>HUAMÁN FLORES, JESÚS JAVIER</td><td>59PMSDS502</td><td>10420620981</td><td>LOPEZ MAURICIO JAIME PERCY</td></tr>
+        </tbody>
+    </table>
+</div>
+
+
+
+
+
+
+
+
+<div class="table-container" id="tableContainer53">
+    <table id="dataTable53">
+        <h2>BLOQUE 59PMSDS601</h2>
+        <thead>
+            <tr>
+                <th>ITEM</th>
+                <th>ID</th>
+                <th>APELLIDOS Y NOMBRES</th>
+                <th>BLOQUE</th>
+                <th>RUC</th>
+                <th>RAZON SOCIAL</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr><td>615</td><td>1438201</td><td>CHÁVEZ PALACIOS, JUAN SANTIAGO</td><td>59PMSDS601</td><td>20562671316</td><td>ADVANCE TECHNOLOGY GROUP S.A.C.</td></tr>
+            <tr><td>616</td><td>1448928</td><td>LLAPAPASCA HUAMBACHANO, JEAN FRANCO</td><td>59PMSDS601</td><td>20605443941</td><td>GRUPO VICENTE INVERSIONES E.I.R.L.</td></tr>
+            <tr><td>617</td><td>1453892</td><td>NORIA NECIOSUP, ALEXIS RENZO</td><td>59PMSDS601</td><td>20611024216</td><td>DATALAB COMPUTER E.I.R.L.</td></tr>
+            <tr><td>618</td><td>1429380</td><td>PALACIOS VILLALTA, FABIAN SMITH</td><td>59PMSDS601</td><td>10442863119</td><td>VIDAL ROJAS NAY EDUARDO</td></tr>
+            <tr><td>619</td><td>1363856</td><td>PAUCAR ORTIZ, GUILLERMO JHARNELT</td><td>59PMSDS601</td><td>20297986130</td><td>TECNOLOGIA TEXTIL S.A.</td></tr>
+            <tr><td>620</td><td>1427455</td><td>RAZA HUAYNATE, KENYI CELESTINO</td><td>59PMSDS601</td><td>20521291339</td><td>A & S SOLUCIONES INTEGRALES SOCIEDAD ANONIMA CERRADA</td></tr>
+            <tr><td>621</td><td>852070</td><td>RODRIGUEZ CHUSI, ANGEL MAXIMILIANO</td><td>59PMSDS601</td><td>20606121408</td><td>CORPORACION DYLIAN E.I.R.L.</td></tr>
+            <tr><td>622</td><td>1385095</td><td>SOLIS FANIAN, ROBERTO CARLOS</td><td>59PMSDS601</td><td>10480938572</td><td>CARDENAS SAN MARTIN JAQUELINE INES</td></tr>
+            <tr><td>623</td><td>1443073</td><td>SUPANTA VIDALON, KARLA XIMENA</td><td>59PMSDS601</td><td>10445467991</td><td>GREGORIO GREGORIO LUIGI RAMIRO</td></tr>
+            <tr><td>624</td><td>1454343</td><td>TANTACHUCO RISCO, ADRIAN JOSEI</td><td>59PMSDS601</td><td>15607329947</td><td>RIVILLA GIL NAYANTH JOSE</td></tr>
+            <tr><td>625</td><td>1416534</td><td>TORNERO DUEÑAS, GABRIEL ALONSO</td><td>59PMSDS601</td><td>20521291339</td><td>A & S SOLUCIONES INTEGRALES SOCIEDAD ANONIMA CERRADA</td></tr>
+        </tbody>
+    </table>
+</div>
+
+<div class="table-container" id="tableContainer54">
+    <table id="dataTable54">
+        <h2>BLOQUE 59PMSDS602</h2>
+        <thead>
+            <tr>
+                <th>ITEM</th>
+                <th>ID</th>
+                <th>APELLIDOS Y NOMBRES</th>
+                <th>BLOQUE</th>
+                <th>RUC</th>
+                <th>RAZON SOCIAL</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr><td>626</td><td>1434970</td><td>REYES HERRERA, WILSON BAYRON</td><td>59PMSDS602</td><td>10107422736</td><td>ACUÑA GIRALDO EMILIO WENSISLAO</td></tr>
+            <tr><td>627</td><td>1448991</td><td>VASQUEZ GOMEZ, PEDRO EFRAIN</td><td>59PMSDS602</td><td>10404829675</td><td>ARANDA BENAVENTE ANDERSON ALEXANDER</td></tr>
+            <tr><td>628</td><td>1430105</td><td>ANDIA CHIPANA, RICHARD DENILSON</td><td>59PMSDS602</td><td>20513020369</td><td>AREA DE DISEÑO S.A.C.</td></tr>
+            <tr><td>629</td><td>1423432</td><td>RAMOS VARA, ALVARO JOSUE</td><td>59PMSDS602</td><td>20609996715</td><td>SHARD AEGIS E.I.R.L</td></tr>
+            <tr><td>630</td><td>1432258</td><td>PAUCAR CANGALAYA, JHOEL ANGEL</td><td>59PMSDS602</td><td>20600249071</td><td>TECHNET GROUP SOCIEDAD ANONIMA CERRADA</td></tr>
+            <tr><td>631</td><td>1435989</td><td>LUJAN CASTRO, ANGEL JOSUE</td><td>59PMSDS602</td><td>10736323627</td><td>ZAMORA CHUQUINO CAROLINA SARAI</td></tr>
+            <tr><td>632</td><td>1430068</td><td>MIRANDA MANRIQUE, SERGIO GABRIEL</td><td>59PMSDS602</td><td>10441255409</td><td>MAQUERA RODRIGUEZ JANETH ANDREA</td></tr>
+            <tr><td>633</td><td>1373919</td><td>DURAN ANAYA, JOSUE NATANAEL</td><td>59PMSDS602</td><td>20519406951</td><td>MI TECNICO PC SAC</td></tr>
+            <tr><td>634</td><td>1425299</td><td>ARANGO CLARA, GABRIEL ALEJANDRO</td><td>59PMSDS602</td><td>20605438980</td><td>PC & SISTEMAS INFORMATICOS S.A.C.</td></tr>
+            <tr><td>635</td><td>1449727</td><td>VELA GUERRA, OSCAR ARMANDO</td><td>59PMSDS602</td><td>20556231398</td><td>PERUVEN COMPUTER S.A.C</td></tr>
+            <tr><td>636</td><td>1433861</td><td>TENORIO ANTEZANA, JUAN MIGUEL</td><td>59PMSDS602</td><td>20609557576</td><td>TECNOLOGIAS DE LA INFORMACION Y LA COMUNICACION SOLUTION S.A.C.</td></tr>
+            <tr><td>637</td><td>1450225</td><td>CHURA ROJAS, ANGEL GABRIEL</td><td>59PMSDS602</td><td>20509895776</td><td>TEKTRONIC E.I.R.L.</td></tr>
+            <tr><td>638</td><td>1395658</td><td>CASTILLO ARCE, JOHAN MATH</td><td>59PMSDS602</td><td>10067733709</td><td>CASTILLO HIDALGO JUAN CARLOS</td></tr>
+            <tr><td>639</td><td>1419471</td><td>DIAZ ESTRADA, JUAN DIEGO</td><td>59PMSDS602</td><td>20607739341</td><td>ECOLOGYSYMS E.I.R.L.</td></tr>
+            <tr><td>640</td><td>1433854</td><td>GARCIA RAMIREZ KAHN, MARCO ANTONIO</td><td>59PMSDS602</td><td>20607216101</td><td>OMEGA LABELS S.A.C.</td></tr>
+            <tr><td>641</td><td>1259229</td><td>QUISPE RIVEROS, EDSON CARLOS</td><td>59PMSDS602</td><td>20552292872</td><td>COVISIAN PERÚ S.A.</td></tr>
+            <tr><td>642</td><td>1450105</td><td>TORRE YAURI, DIEGO EDIZON</td><td>59PMSDS602</td><td>20606711060</td><td>VERA PC S.A.C.</td></tr>
+            <tr><td>643</td><td>1441055</td><td>VALDEZ CONDORI, MAURICIO RENE</td><td>59PMSDS602</td><td>20385752360</td><td>SOLARA SOCIEDAD ANONIMA CERRADA - SOLARA S.A.C.</td></tr>
+            <tr><td>644</td><td>1432091</td><td>CASTILLO MENDOZA, JOSÉ MATHIAS</td><td>59PMSDS602</td><td>20519406951</td><td>MI TECNICO PC SAC</td></tr>
+        </tbody>
+    </table>
+</div>
+
+<div class="table-container" id="tableContainer55">
+    <table id="dataTable55">
+        <h2>BLOQUE 59PMSDS603</h2>
+        <thead>
+            <tr>
+                <th>ITEM</th>
+                <th>ID</th>
+                <th>APELLIDOS Y NOMBRES</th>
+                <th>BLOQUE</th>
+                <th>RUC</th>
+                <th>RAZON SOCIAL</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr><td>645</td><td>1445108</td><td>ACHO CARO, JAIR MANUEL</td><td>59PMSDS603</td><td>20608554557</td><td>VASIRED PERU E.I.R.L.</td></tr>
+            <tr><td>646</td><td>1368799</td><td>BULEJE VILLANTOY, MATEO JESUS</td><td>59PMSDS603</td><td>20557193147</td><td>REBALLING AMERICA E.I.R.L</td></tr>
+            <tr><td>647</td><td>1442192</td><td>HUAMÁN SUÁREZ, LEO ALEXIS</td><td>59PMSDS603</td><td>20603515821</td><td>HOME TECHNOLOGYS S.A.C.</td></tr>
+            <tr><td>648</td><td>1426049</td><td>VENEGAS ANAMPA, FRANCO ALESSANDRO</td><td>59PMSDS603</td><td>20603515821</td><td>HOME TECHNOLOGYS S.A.C.</td></tr>
+        </tbody>
+    </table>
+</div>
+
+
+<div class="table-container" id="tableContainer55">
+    <table id="dataTable55">
+        <h2>BLOQUE 59PVIDS601</h2>
+        <thead>
+            <tr>
+                <th>ITEM</th>
+                <th>ID</th>
+                <th>APELLIDOS Y NOMBRES</th>
+                <th>BLOQUE</th>
+                <th>RUC</th>
+                <th>RAZON SOCIAL</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr><td>673</td><td>1453537</td><td>BARZOLA QUISPE, JOSUÉ NAHUM</td><td>59PVIDS601</td><td>20609347067</td><td>MULTISERVICIOS KATYGRAFT S.A.C.</td></tr>
+            <tr><td>674</td><td>1353553</td><td>CARRIL YTURRY, LEONARDO ANTONIO</td><td>59PVIDS601</td><td>20608838725</td><td>LYGUSNET S.A.C.</td></tr>
+            <tr><td>675</td><td>1435274</td><td>GASPAR YABARRENA, ROBERT ANDERSON</td><td>59PVIDS601</td><td>20606503491</td><td>YACHAY PARTNER S.A.C.</td></tr>
+            <tr><td>676</td><td>1429800</td><td>PEREZ GONZALES, JUNIOR GUILLERMO</td><td>59PVIDS601</td><td>20545122520</td><td>J & P PERIFERICOS S.A.C.</td></tr>
+        </tbody>
+    </table>
+</div>
+
+
+<script>
+    const searchInput = document.getElementById('searchInput');
+
+    searchInput.addEventListener('keyup', function() {
+        const filter = searchInput.value.toLowerCase();
+        const tables = document.querySelectorAll('.table-container');
+
+        let foundResults = false;
+
+        tables.forEach((tableContainer) => {
+            const rows = tableContainer.querySelector('tbody').getElementsByTagName('tr');
+            let hasVisibleRows = false;
+
+            for (let i = 0; i < rows.length; i++) {
+                const cells = rows[i].getElementsByTagName('td');
+                let rowContainsSearchTerm = false;
+
+                for (let j = 0; j < cells.length; j++) {
+                    if (cells[j].innerText.toLowerCase().includes(filter)) {
+                        rowContainsSearchTerm = true;
+                        break;
+                    }
+                }
+
+                rows[i].style.display = rowContainsSearchTerm ? '' : 'none';
+                if (rowContainsSearchTerm) {
+                    hasVisibleRows = true;
+                }
+            }
+
+            // Mostrar tabla si hay filas visibles
+            if (hasVisibleRows) {
+                tableContainer.style.display = 'block';
+                foundResults = true;
+            } else {
+                tableContainer.style.display = 'none'; // Ocultar si no hay filas visibles
+            }
+        });
+
+        // Si no se encuentran resultados, ocultar las tablas
+        if (!foundResults) {
+            tables.forEach((tableContainer) => {
+                tableContainer.style.display = 'none';
+            });
+        }
+    });
+</script>
+
+</body>
+</html>
